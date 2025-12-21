@@ -58,6 +58,33 @@ OMI is not:
 
 ---
 
+## Background & Motivation
+
+The motivation behind OMI is described in more detail in the following essay:
+
+- *Open Memory Is Not a Luxury — Introducing the Open Memory Initiative (OMI)*  
+  https://medium.com/@mefe.sensoy/open-memory-is-not-a-luxury-introducing-the-open-memory-initiative-omi-77d189299f6d
+
+---
+
+## Current Status
+
+- Organizational structure and charter defined
+- Public narrative and scope being established
+- Technical roadmap under preparation
+
+No technical implementation has started yet.
+
+---
+
+## Governance
+
+OMI operates under a published charter that defines its principles, scope, and
+decision-making process. Technical direction is guided by transparency,
+documentation quality, and long-term sustainability.
+
+---
+
 ## License
 
 Licensing details will be added as the project progresses.
