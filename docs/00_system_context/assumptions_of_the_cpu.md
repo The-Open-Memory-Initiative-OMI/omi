@@ -27,7 +27,7 @@ It assumes that it is.
 
 ---
 
-## Assumption 1 — Reads Return the Last Written Value
+## Assumption 1 - Reads Return the Last Written Value
 
 The most fundamental assumption:
 
@@ -51,7 +51,7 @@ It trusts memory completely.
 
 ---
 
-## Assumption 2 — Memory Operations Are Deterministic
+## Assumption 2 - Memory Operations Are Deterministic
 
 The CPU assumes that memory behavior is:
 
@@ -69,7 +69,7 @@ When memory becomes probabilistic, the CPU has no mechanism to adapt.
 
 ---
 
-## Assumption 3 — Timing Rules Are Always Met
+## Assumption 3 - Timing Rules Are Always Met
 
 Modern CPUs issue memory requests under strict timing expectations.
 
@@ -87,7 +87,7 @@ It corrupts data.
 
 ---
 
-## Assumption 4 — Memory Errors Are Exceptionally Rare
+## Assumption 4 - Memory Errors Are Exceptionally Rare
 
 Architecturally, CPUs are designed under the assumption that:
 
@@ -103,7 +103,7 @@ When errors do occur, the system has limited ability to respond meaningfully.
 
 ---
 
-## Assumption 5 — Memory Is Cohesive Across the System
+## Assumption 5 - Memory Is Cohesive Across the System
 
 The CPU assumes that:
 
