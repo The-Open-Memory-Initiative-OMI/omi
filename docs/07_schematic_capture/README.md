@@ -1,248 +1,164 @@
-# Stage 7 — Schematic Capture Guide
+# 07 — Schematic Capture
 
-Stage 7 defines **how schematics must be captured** for the OMI v1 DIMM design.
+## Purpose
 
-This guide exists to ensure that:
-- Architectural intent is preserved during schematic capture
-- Constraints remain visible and enforceable
-- Reviews can detect errors early
-- No schematic decision silently redefines the design
+This directory contains the **schematic implementation** of **OMI v1**.
 
-This stage is about *how to draw*, not *what to invent*.
+Stage 7 exists to **translate the fully locked architectural intent of Stage 6 into a complete, reviewable electrical schematic**.  
+No new architecture, features, or assumptions are introduced here.
 
----
-
-## What Stage 7 Is
-
-Stage 7 is a **process and discipline guide**.
-
-It explains:
-- How to structure schematic sheets
-- How to represent blocks and interfaces
-- How to express topology and constraints visually
-- How to avoid common schematic-level failures
-
-Stage 7 assumes all architectural decisions are already complete.
+This is an **execution stage**, not a design exploration stage.
 
 ---
 
-## What Stage 7 Is NOT
+## Entry Conditions (Hard Gate)
 
-Stage 7 does **not** include:
-- Component selection
-- Value tuning
-- Electrical optimization
-- Layout guidance
-- Performance enhancement
+Work in this directory may begin **only if**:
 
-If a decision affects architecture, it belongs in Stage 5 — not here.
+- Stage 5 (scope locking) is complete  
+- Stage 6.1–6.7 (technical decomposition) is complete  
+- Stage 6 closure has been explicitly declared  
+- No open architectural or scope questions remain  
 
----
-
-## Golden Rule of Schematic Capture
-
-> **A schematic must make incorrect implementations visually uncomfortable.**
-
-If a reviewer can't *see* that something is wrong,
-the schematic is not good enough.
+If any assumption is unclear, work must pause and documentation must be updated **before continuing**.
 
 ---
 
-## Recommended Schematic Sheet Structure
+## Scope
 
-Schematics should be split into **functional sheets**, not convenience sheets.
+This directory covers **schematic capture only**.
 
-Recommended structure:
+### Included
+- Electrical schematics implementing all Stage 6 blocks  
+- Explicit connectivity for power, signals, configuration, and connector  
+- Clear signal naming, grouping, and documentation  
+- Reviewable schematic artifacts (native files and PDFs)  
 
+### Explicitly Excluded
+- PCB layout or routing  
+- Signal integrity or power integrity simulation  
+- BOM cost optimization  
+- Validation execution or testing  
 
-
-01_dimm_connector.sch
-02_power_distribution.sch
-03_dram_array_overview.sch
-04_byte_lane_0.sch
-05_byte_lane_1.sch
-...
-NN_spd_and_aux.sch
-
-
-Each sheet must have a clear ownership boundary.
-
----
-
-## Sheet 1 — DIMM Connector
-
-**Purpose:**
-- Represent the system boundary
-- Show signal grouping explicitly
-
-Rules:
-- No DRAM devices on this sheet
-- No decoupling on this sheet
-- Signals must be grouped exactly as defined in Stage 6
-- Buses must be used for address and data groups
-
-This sheet defines the contract with the host system.
+Those belong to later stages.
 
 ---
 
-## Sheet 2 — Power Distribution
+## Design Philosophy
 
-**Purpose:**
-- Make power domains explicit
-- Prevent rail mixing
+Schematic capture in OMI v1 follows these principles:
 
-Rules:
-- One rail = one named net
-- No implicit power pins
-- VDD, VDDQ, Vref, VTT, and auxiliary rails must be separate
-- Decoupling placeholders must be visible per rail
+- **Fidelity over creativity**  
+- **Completeness over speed**  
+- **Clarity over compactness**  
+- **Explicit behavior over implicit assumptions**  
 
-If power domains are unclear here, the schematic is invalid.
+A schematic that "probably works" but cannot be explained is considered incorrect.
 
 ---
 
-## Sheet 3 — DRAM Array Overview
+## Rules of Engagement (Non-Negotiable)
 
-**Purpose:**
-- Show rank structure
-- Show byte-lane partitioning
-- Show shared vs point-to-point intent
+While working in Stage 7:
 
-Rules:
-- No pin-level detail
-- Byte lanes must appear as distinct blocks
-- Address/command and clock must appear shared
-- Data must appear lane-isolated
+- No new features may be added  
+- No topology changes may be introduced  
+- No assumptions may remain undocumented  
+- No "just in case" circuitry is allowed  
+- No optimization for performance is permitted  
 
-This sheet is the architectural sanity check.
+If a schematic decision requires creativity, **stop** and revisit documentation.
 
----
-
-## Byte Lane Sheets (One per Lane)
-
-**Purpose:**
-- Capture the most timing-critical interfaces correctly
-
-Rules:
-- One byte lane per sheet
-- Only one DQ group and one DQS group per sheet
-- No cross-lane signals allowed
-- DQS must be adjacent to its DQ group
-- Power pins must reference explicit rails
-
-If two lanes touch on a sheet, it is a violation.
+Stage 7 implements decisions — it does not make them.
 
 ---
 
-## SPD and Auxiliary Sheet
+## Required Schematic Structure
 
-**Purpose:**
-- Support configuration and discovery
-- Remain isolated from high-speed domains
+Schematic pages **must mirror Stage 6 blocks**.
 
-Rules:
-- Only auxiliary/standby power allowed
-- No connection to VDD/VDDQ/Vref/VTT
-- Low-speed bus only
-- No DDR signals allowed
+The expected page structure is:
 
-This sheet must remain boring — and that is good.
+1. **Power & PDN**
+2. **Address / Command / Clock**
+3. **Data Byte-Lane (template)**
+4. **Data Byte-Lane Replication**
+5. **SPD & I²C**
+6. **Connector / Edge Interface**
+7. **Notes & References**
 
----
-
-## Signal Representation Rules
-
-### Buses and Bundles
-
-- Address must be drawn as a bus
-- DQ must be drawn as lane-indexed bundles
-- Command and control must be grouped logically
-- No exploding buses into single nets unless required
-
-Bundles preserve intent.
+Mixing unrelated concerns on the same page is not allowed.
 
 ---
 
-### Naming Discipline
+## Review Philosophy
 
-- Every net name must encode its role
-- Lane index must be visible in every data-related net
-- Rank index must be visible where applicable
-- No ambiguous abbreviations
+Schematic review focuses on:
 
-If a net name requires a legend, it is wrong.
+- Conformance to Stage 6 documentation  
+- Internal consistency and completeness  
+- Signal traceability end-to-end  
+- Power-up and reset behavior clarity  
+- Debuggability and observability  
 
----
+Performance, cost, or optimization are **not** review criteria at this stage.
 
-## Power and Decoupling Representation
-
-- Decoupling must be present but abstracted
-- Show intent (bulk vs local vs HF) without values
-- Decoupling must be rail-specific
-- No "generic" decoupling symbols
-
-Decoupling is part of correctness, not decoration.
+A schematic passes review only if a reviewer can explain its behavior **without oral context**.
 
 ---
 
-## What to Avoid at All Costs
+## Change Management
 
-Do **not**:
-- Combine multiple byte lanes on one sheet
-- Hide power pins using implicit connections
-- Merge power rails for convenience
-- Rely on layout to "fix" schematic ambiguity
-- Encode timing assumptions in comments only
+Once a schematic page is reviewed and accepted:
 
-If it's important, it must be structural.
+- It is considered **frozen**
+- Changes require:
+  - A documented reason
+  - Identification of impacted Stage 6 assumptions
+  - Explicit reviewer acknowledgment
 
----
-
-## Review Checklist (Schematic-Level)
-
-A schematic set is acceptable only if:
-
-- Every byte lane is isolated and traceable
-- DQS–DQ pairing is unambiguous
-- Clock distribution is global and clear
-- Power domains are explicit and separated
-- No architectural assumptions are implicit
-
-If a reviewer has to ask "what did you mean here?",
-the schematic is not ready.
+Silent fixes are not allowed.
 
 ---
 
-## Relationship to Layout
+## Expected Outputs
 
-Schematic capture defines:
-- What layout *must* respect
-- What layout *cannot* reinterpret
+Stage 7 produces:
 
-Layout should only:
-- Implement
-- Optimize within constraints
-- Never decide architecture
+- Complete schematic files
+- PDF exports for review
+- Review notes and resolutions
+- A frozen, copper-ready schematic package
 
-If layout needs to guess, schematic capture failed.
+These outputs authorize progression to **Stage 8 — Validation & Bring-Up Execution**.
 
 ---
 
-## Takeaway
+## Common Failure Modes (Avoid These)
 
-Stage 7 is where architecture meets ink.
-
-A good schematic:
-- Makes the right thing obvious
-- Makes the wrong thing difficult
-- Protects intent under pressure
-
-If Stage 5 defined truth,
-and Stage 6 preserved it,
-Stage 7 ensures it survives contact with humans.
+- Starting with data lanes before power is defined  
+- Relying on layout to "fix" schematic ambiguity  
+- Leaving pins floating without explanation  
+- Assuming controller behavior without documentation  
+- Treating schematics as art instead of proof  
 
 ---
 
-Next Stage:
-- Stage 8 — Reference Schematic (Minimal, Correctness-First)
-- or Stage 8 — Validation & Review Playbook
+## Completion Criteria
+
+Stage 7 is complete only when:
+
+- Every Stage 6 block is traceable in the schematic  
+- No undocumented assumptions remain  
+- At least one structured schematic review is passed  
+- The schematic is frozen for layout  
+
+---
+
+## One-Sentence Anchor
+
+> **Stage 7 is where ambiguity is eliminated, not deferred.**
+
+---
+
+*This directory marks the transition from architectural intent to physical reality.*
