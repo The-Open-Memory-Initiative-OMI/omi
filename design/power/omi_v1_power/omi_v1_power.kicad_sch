@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power & PDN")
-		(date "2025-12-27")
+		(date "2026-01-27")
+		(rev "1.1.0")
 		(company "OMI")
 		(comment 1 "Stage 7.1 — Power Schematic")
 		(comment 2 "No CA, Data, SPD, or Connector signals allowed")
