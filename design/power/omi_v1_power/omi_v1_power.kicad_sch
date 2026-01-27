@@ -7501,6 +7501,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 370.84 0)
+		(size 274.32 186.69)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0608c925-7d0a-486c-adfa-f9e150a950d8")
+		(property "Sheetname" "address-command-clock"
+			(at 370.84 -0.7116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "address-command-clock.kicad_sch"
+			(at 370.84 187.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
