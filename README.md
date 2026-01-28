@@ -1,9 +1,10 @@
+
 # The Open Memory Initiative (OMI)
 
 The **Open Memory Initiative (OMI)** is a community-driven engineering project focused on making system memory **understandable, reproducible, and buildable**.
 
-OMI approaches memory as a *first-class architectural system*, not a black box.
-The project emphasizes **documentation-first design**, explicit constraints, and reproducible validation, starting with mature PC DDR technologies.
+OMI treats memory as a *first-class architectural system*, not a black box.
+The project emphasizes **documentation-first design**, explicit constraints, and reproducible validation—starting with mature PC DDR technologies.
 
 This is an **engineering-first, correctness-oriented effort**, not a product launch.
 
@@ -14,11 +15,11 @@ This is an **engineering-first, correctness-oriented effort**, not a product lau
 Open CPUs, SoCs, and accelerators are now common.
 System memory is not.
 
-Despite being fundamental to all computation, modern DRAM modules remain opaque, proprietary, and difficult to study or reproduce outside closed industrial contexts.
+Despite being fundamental to computation, modern DRAM modules remain opaque, proprietary, and difficult to study or reproduce outside closed industrial contexts.
 
 OMI exists to close this gap by providing:
 
-- an open, reference-quality memory design
+- an open, reference-quality memory design target
 - a transparent engineering methodology
 - documentation that explains *why* decisions were made, not just *what* was built
 
@@ -26,24 +27,43 @@ OMI exists to close this gap by providing:
 
 ## Project Status
 
-OMI is active and progressing deliberately.
+OMI is active and progressing deliberately. Current work is focused on shipping a **reviewable DDR4 UDIMM reference schematic set** (starting from power → CA/CLK → DQ/DQS) and then moving into SPD + bring-up strategy.
 
 ### Completed
 
 - Project charter and governance model
-- Engineering methodology (architecture → constraints → implementation → validation)
-- Public documentation of design philosophy and process
-- Validation and review framework
-- Layout and SI/PI design guidelines
-- Minimal reference design definition
+- Contribution workflow and participation baseline
+- Staged engineering approach (architecture → blocks → schematic capture → validation)
+- **Stage 5 (Architecture Decisions) — locked OMI v1 direction** (DDR4 UDIMM baseline)
+- **Stage 6 (Block Decomposition) — core technical blocks documented** (power, CA/CLK, SPD/config, etc.)
+- **Stage 7 schematic capture progress**
+  - **7.1 Power & PDN — completed and frozen**
+  - **7.2 Address/Command/Clock — completed and frozen (schematic uses simplified star representation; routing topology deferred to layout constraints)**
+  - **7.3 Data (DQ/DQS) byte-lanes — completed and frozen with per-DRAM net naming (D0…D7) to prevent accidental shorts**
 
 ### In Progress
 
-- Finalizing v1 memory target (DDR3 vs DDR4)
-- Defining initial validation and bring-up platforms
-- Preparing minimal reference schematic artifacts
+- **Stage 7.4 — SPD & Configuration schematic**
+- **Stage 6 remaining blocks and closure**
+  - mechanical/connector interface doc refinements
+  - validation & bring-up strategy doc completion
+  - block interface summary + closure pass
+- **Validation platform definition + bring-up plan**
+- Converting placeholders into **pin-accurate UDIMM connector mapping** as documentation and review maturity increases
 
 OMI prioritizes **structural correctness and reproducibility** over speed.
+
+---
+
+## Repository Navigation
+
+OMI is organized by engineering stages:
+
+- `docs/05_architecture_decisions/` — Stage 5 decisions (what we build and why)
+- `docs/06_block_decomposition/` — Stage 6 blocks (power, CA/CLK, SPD, mechanical, validation plan)
+- `docs/07_schematic_capture/` — Stage 7 schematic capture (power, CA/CLK, DQ/DQS, SPD next)
+
+If you're new: start with the engineering method doc below, then skim Stage 5 decisions, then follow Stage 7 artifacts.
 
 ---
 
@@ -51,9 +71,7 @@ OMI prioritizes **structural correctness and reproducibility** over speed.
 
 OMI follows a documentation-first, staged engineering methodology designed to preserve correctness, clarity, and reproducibility from architecture through implementation.
 
-There are two complementary documents describing this approach:
-
-- 📄 **[How OMI Is Engineered (Repository Document)](./docs/how_omi_is_engineered.md)**A living, in-repo document that explains the engineering philosophy, stages, and internal structure of OMI. This is the canonical reference for contributors.
+- 📄 **[How OMI Is Engineered (Repository Document)](./docs/how_omi_is_engineered.md)** — A living, in-repo document that explains the engineering philosophy, stages, and internal structure of OMI. This is the canonical reference for contributors.
 
 This document explains:
 
@@ -91,9 +109,9 @@ Before contributing, please read:
 
 Good ways to engage:
 
-- Review architecture or validation documents
+- Review Stage 5–7 documents and challenge assumptions
 - Ask critical questions in GitHub Discussions
-- Open issues for concrete, actionable topics
+- Open issues for concrete, actionable topics (with clear acceptance criteria)
 
 OMI values **careful review and precise feedback** more than rapid iteration.
 
@@ -124,6 +142,9 @@ The original motivation for OMI is described here:
 
 **Open Memory Is Not a Luxury — Introducing the Open Memory Initiative (OMI)**
 https://medium.com/@mefe.sensoy/open-memory-is-not-a-luxury-introducing-the-open-memory-initiative-omi-77d189299f6d
+
+**The Open Memory Initiative (OMI): Toward an Open, Reproducible DDR Memory Module**
+https://www.linkedin.com/pulse/open-memory-initiative-omi-toward-reproducible-ddr-module-%C5%9Fensoy-8aqee/?trackingId=GKHgAhggTk2MHWIAghdTHw%3D%3D
 
 This essay provides historical and ecosystem context.
 The repository documents the engineering reality.
