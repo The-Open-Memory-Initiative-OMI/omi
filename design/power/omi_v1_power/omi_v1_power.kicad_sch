@@ -931,7 +931,7 @@
 		)
 	)
 	(sheet
-		(at 308.61 175.26)
+		(at 308.61 135.89)
 		(size 39.37 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -947,7 +947,7 @@
 		)
 		(uuid "0608c925-7d0a-486c-adfa-f9e150a950d8")
 		(property "Sheetname" "address-command-clock"
-			(at 308.61 174.5484 0)
+			(at 308.61 135.1784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -956,7 +956,7 @@
 			)
 		)
 		(property "Sheetfile" "address-command-clock.kicad_sch"
-			(at 308.61 208.8646 0)
+			(at 308.61 169.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,6 +968,48 @@
 			(project "omi_v1_power"
 				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 308.61 175.26)
+		(size 39.37 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a876beee-cefa-449d-aa5c-f6d2865bd67f")
+		(property "Sheetname" "data-byte-lanes-dqs"
+			(at 308.61 174.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "data-byte-lanes-dqs.kicad_sch"
+			(at 308.61 208.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42"
+					(page "3")
 				)
 			)
 		)

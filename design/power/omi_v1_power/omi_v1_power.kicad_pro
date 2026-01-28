@@ -598,7 +598,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../exports/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -617,6 +617,10 @@
     [
       "0608c925-7d0a-486c-adfa-f9e150a950d8",
       "address-command-clock"
+    ],
+    [
+      "a876beee-cefa-449d-aa5c-f6d2865bd67f",
+      "data-byte-lanes-dqs"
     ]
   ],
   "text_variables": {}
