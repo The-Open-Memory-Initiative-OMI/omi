@@ -621,6 +621,10 @@
     [
       "a876beee-cefa-449d-aa5c-f6d2865bd67f",
       "data-byte-lanes-dqs"
+    ],
+    [
+      "32845847-1fe2-4b3a-b24a-3fdd7e5b4214",
+      "spd-and-configuration"
     ]
   ],
   "text_variables": {}
