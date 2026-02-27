@@ -625,6 +625,10 @@
     [
       "32845847-1fe2-4b3a-b24a-3fdd7e5b4214",
       "spd-and-configuration"
+    ],
+    [
+      "9986c6c0-2ac4-474e-a00a-d8203c8bf46f",
+      "udimm-edge-interface"
     ]
   ],
   "text_variables": {}

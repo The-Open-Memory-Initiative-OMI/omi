@@ -1015,6 +1015,48 @@
 		)
 	)
 	(sheet
+		(at 308.61 52.07)
+		(size 39.37 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9986c6c0-2ac4-474e-a00a-d8203c8bf46f")
+		(property "Sheetname" "udimm-edge-interface"
+			(at 308.61 51.3584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "udimm-edge-interface.kicad_sch"
+			(at 308.61 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 308.61 175.26)
 		(size 39.37 33.02)
 		(exclude_from_sim no)
