@@ -1,8 +1,9 @@
-# Stage 8 — Validation & Review Playbook
+# Stage 8 — Validation & Review Playbook (OMI v1)
 
-Stage 8 defines **how the OMI v1 design is validated and reviewed** before, during, and after schematic and layout work.
+Stage 8 defines **how OMI v1 is validated and reviewed** before, during, and after schematic and layout work.
 
 Its purpose is to:
+
 - Detect architectural violations early
 - Prevent silent margin erosion
 - Make failures explainable instead of mysterious
@@ -12,19 +13,18 @@ This stage validates *correctness*, not performance.
 
 ---
 
-## Why Validation Comes Before Reference Schematics
+## Why Validation Comes Before Build Claims
 
 Memory systems rarely fail because of one large mistake.
 They fail because of **many small, individually "acceptable" violations**.
 
-Without a validation framework:
-- Errors hide across sheets
-- Responsibility becomes unclear
-- Reviews become subjective
-- Failures appear late and intermittently
-
 Stage 8 exists to ensure:
-> **Every important rule has a place where it is checked.**
+
+> **Every important rule has a place where it is checked — and produces artifacts.**
+
+Validation without artifacts is opinion, not engineering.
+
+(Testing/measurement contributions must include platform details, tools, procedures, and results incl. failures.)
 
 ---
 
@@ -41,208 +41,163 @@ If a design fails and you cannot point to *which rule was violated*, validation 
 
 ---
 
-## Validation Layers
+## Validation Ladder (Evidence Levels)
 
-Validation is performed in **layers**, each with a clear goal:
+Stage 8 is not a single event. Evidence accumulates in levels:
 
-1. Architecture compliance
-2. Schematic correctness
-3. Constraint adherence
-4. Power integrity sanity
-5. Failure containment
+- **L0 — Artifact Integrity:** ERC sanity, pin map integrity (288/288), naming consistency
+- **L1 — Bench Electrical:** continuity, rail presence/behavior, SPD bus read
+- **L2 — Host Enumeration:** SPD read in a host, BIOS reports plausible config
+- **L3 — Training + Boot:** training completes, OS boots and uses RAM
+- **L4 — Stress + Soak:** long memory tests, repeatability, documented failures
 
-Each layer catches different classes of errors.
+---
+
+## Layer 0 — Artifact Integrity Review (Hard Gate)
+
+### Objective
+
+Ensure artifacts are internally consistent and reviewable.
+
+### Checklist
+
+- [ ] Pin map CSV is complete (288/288), no duplicate pins, no missing pins
+- [ ] Net manifest matches schematic net names (no aliases)
+- [ ] Decisions are referenced where relevant (VREF Option A, CA/CLK schematic topology, DQ naming, SPD WP policy)
+- [ ] If something is uncertain, it is stated explicitly
+
+### Failure indicators
+
+- Missing/duplicated pin numbers in CSV
+- Hidden renames ("same net with different names")
+- Undocumented tie-offs or "magic" assumptions
+
+Hard stop until fixed.
 
 ---
 
 ## Layer 1 — Architecture Compliance Review
 
 ### Objective
-Ensure that no schematic or layout artifact violates Stage 5 architecture.
+
+Ensure no artifact violates Stage 5 architecture.
 
 ### Checklist
 
-- [ ] Data topology is point-to-point per byte lane
-- [ ] Address/command topology is shared (fly-by intent preserved)
-- [ ] Clock topology is shared and differential
-- [ ] Byte lanes are independent timing domains
+- [ ] **DQ naming is per-lane/per-DRAM (D0..D7)** and prevents shared DQ nets
+- [ ] CA/CLK nets are shared across DRAMs (connectivity correct)
+- [ ] Clocks are differential and unambiguous
+- [ ] Rank boundaries and unused rank-1 connector pins are explicitly handled (NC + notes)
 - [ ] No undocumented architectural behavior exists
 
-### Failure Indicators
+### Failure indicators
 
-- Shared DQ nets
-- Replicated command drivers
-- Local clock buffering
+- Shared DQ nets across multiple lanes/devices
 - Cross-lane connections
+- Local clock buffering / multiple clock domains (without justification)
 
-Any violation here is a **hard stop**.
+Hard stop.
 
 ---
 
 ## Layer 2 — Schematic Structure Review
 
 ### Objective
+
 Ensure schematics encode intent structurally, not implicitly.
 
 ### Checklist
 
-- [ ] Each byte lane has its own schematic sheet
-- [ ] DQS is adjacent to its DQ bundle
-- [ ] Address/command buses are not exploded unnecessarily
-- [ ] Rank boundaries are explicit
-- [ ] No implicit power pins are used
+- [ ] Lane boundaries are explicit (D0..D7 naming; no cross-lane ambiguity)
+- [ ] DQS is adjacent/clearly associated with its DQ bundle (by naming and grouping)
+- [ ] CA/CLK/control signals are not duplicated as separate drivers
+- [ ] Power nets are explicit and not "hidden by assumption"
+- [ ] Notes exist where the schematic uses abstraction (e.g., simplified star representation)
 
-### Failure Indicators
+### Failure indicators
 
-- Mixed-lane symbols
-- Hidden power connections
-- Ambiguous net naming
-- "We'll fix it in layout" comments
-
-If intent is not visible, the schematic is invalid.
+- Ambiguous or inconsistent net naming
+- "We'll fix it in layout" used to justify unclear connectivity
+- Hidden coupling paths not obvious in schematic
 
 ---
 
 ## Layer 3 — Constraint Adherence Review
 
 ### Objective
+
 Ensure Stage 5 constraints survive implementation.
 
-### Timing Constraints
+### Timing constraints (schematic-level intent)
 
-- [ ] DQ within a lane is grouped and treated as matched
-- [ ] DQS-to-DQ association is one-to-one
+- [ ] DQ within a lane is treated as a group (lane-based naming)
+- [ ] DQS-to-DQ association is one-to-one per lane
 - [ ] No artificial lane-to-lane matching constructs appear
-- [ ] Clock path is global and unambiguous
 
-### Power Constraints
+### CA/CLK topology (important clarification)
 
-- [ ] VDD, VDDQ, Vref, VTT are never merged
-- [ ] Vref is not used as a supply
-- [ ] VTT is only used for termination-related functions
+- [ ] **Schematic may use simplified star representation**
+- [ ] **Fly-by ordering is enforced at layout/constraints stage**, not by schematic wiring
 
-### Failure Indicators
+### Power constraints
 
-- Serpentine implied in schematics
-- Rails shorted "for convenience"
-- Reference nets used as power
-
-Constraint violations are correctness violations.
+- [ ] VDD, VDDQ, VREF, VTT are never merged
+- [ ] VREF is not used as a supply
+- [ ] VTT is only used for termination-related functions (connector-level rail)
 
 ---
 
-## Layer 4 — Power Integrity Sanity Review
+## Layer 4 — Power Integrity Review (Split)
 
-### Objective
-Ensure power behavior is electrically plausible.
+### 4A — Schematic PI sanity
 
-### Checklist
+- [ ] Rails are defined and not merged
+- [ ] VREF treated as noise-sensitive reference (not a "power rail")
+- [ ] SPD supply is isolated from DRAM rails (VDDSPD exists and is mapped)
 
-- [ ] Each rail has visible decoupling intent
-- [ ] Decoupling is rail-specific
-- [ ] No rail is under-defined
-- [ ] Auxiliary power is isolated from high-speed domains
+### 4B — Layout readiness gate (before layout begins)
 
-### Failure Indicators
-
-- Single capacitor used "for everything"
-- Missing decoupling placeholders
-- Vref tied to noisy domains
-- SPD powered from DRAM rails
-
-Power issues often appear as timing failures later.
+- [ ] A decoupling plan exists per rail (rail-specific intent)
+- [ ] Measurement points / debug hooks are planned (where feasible)
 
 ---
 
 ## Layer 5 — Failure Containment Review
 
 ### Objective
+
 Ensure failures are localized and diagnosable.
 
 ### Checklist
 
-- [ ] Byte-lane failures do not affect other lanes
-- [ ] SPD failures do not affect DRAM operation electrically
+- [ ] Byte-lane failures do not electrically affect other lanes
+- [ ] SPD failures do not electrically affect DRAM operation
 - [ ] Power rail instability is traceable to a domain
 - [ ] No single-point failure silently breaks the entire system
 
-### Failure Indicators
-
-- Shared nets where isolation is expected
-- Global dependence on auxiliary logic
-- Hidden coupling paths
-
-A failure that spreads uncontrollably is a design failure.
-
 ---
 
-## Validation Artifacts
+## Validation Artifacts (Required)
 
-Every validation pass should produce:
+Every validation pass produces:
 
-- A completed checklist (this document)
-- Annotated schematic screenshots
-- Clear pass/fail notes
+- Completed checklist + pass/fail notes
+- Annotated schematic screenshots (as needed)
 - Explicit waivers (if any), with justification
-
-Validation without artifacts is opinion, not engineering.
+- If testing/measurement is involved: platform details, tools, procedures, results incl failures
 
 ---
 
 ## Review Roles (Recommended)
 
-- **Architect reviewer**  
-  Verifies architectural compliance
-
-- **Implementation reviewer**  
-  Verifies schematic correctness and clarity
-
-- **Power/PI reviewer**  
-  Verifies rail behavior and decoupling intent
-
-One person may fill multiple roles, but the roles must exist conceptually.
+- Architect reviewer (architecture compliance)
+- Implementation reviewer (schematic clarity)
+- Power/PI reviewer (rail correctness / PI readiness)
 
 ---
 
-## When Validation Occurs
+## Next
 
-Validation is not a single event.
+Stage 8 continues into platform selection + bring-up reporting templates, then:
 
-It must occur:
-- Before schematic capture (design readiness)
-- After schematic capture (implementation correctness)
-- Before layout begins
-- After layout completion (against constraints)
-
-Skipping a stage creates blind spots.
-
----
-
-## What This Stage Does NOT Do
-
-Stage 8 does not:
-- Simulate signals
-- Measure margins
-- Optimize performance
-- Certify the design
-
-It ensures the design is **eligible** for those activities.
-
----
-
-## Takeaway
-
-Validation is how you turn "I think it's right" into "I know why it's right."
-
-Stage 8 ensures that:
-- Mistakes are caught early
-- Reviews are objective
-- Failures are explainable
-- OMI v1 remains trustworthy
-
-A design that cannot be reviewed is already broken.
-
----
-
-Next Stage:
 - Stage 9 — Minimal Reference Schematic (Correctness-First)
