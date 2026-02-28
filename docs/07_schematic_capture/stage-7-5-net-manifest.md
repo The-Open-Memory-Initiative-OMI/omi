@@ -12,14 +12,15 @@ It is the authoritative reference for edge-pin mapping in Stage 7.5.
 ## 1. Power Rails
 *(Stages 7.1 + 7.4)*
 
-| Net      | Description                                      |
-|----------|--------------------------------------------------|
-| `VDD`    | Core supply (1.2 V nominal, DDR4)                |
-| `VDDQ`   | I/O supply (DDR4 interface I/O rail)             |
-| `VPP`    | DRAM activating power supply (2.5 V)             |
-| `VREF`   | Reference voltage (maps to VREFCA pins)          |
-| `VDDSPD` | SPD EEPROM supply (2.5 V nominal on DDR4 UDIMMs) |
-| `GND`    | Ground                                           |
+| Net      | Description                                                   |
+|----------|---------------------------------------------------------------|
+| `VDD`    | Core supply (1.2 V nominal, DDR4)                             |
+| `VDDQ`   | I/O supply (DDR4 interface I/O rail)                          |
+| `VPP`    | DRAM activating power supply (2.5 V)                          |
+| `VREF`   | Reference voltage (maps to VREFCA pins)                       |
+| `VDDSPD` | SPD EEPROM supply (2.2–3.6 V, NOM — per primary source Table 4) |
+| `VTT`    | Termination rail (appears in Table 4; supplied by host)       |
+| `GND`    | Ground                                                        |
 
 ---
 
@@ -56,9 +57,11 @@ It is the authoritative reference for edge-pin mapping in Stage 7.5.
 | `CS0_n`   | Chip select 0 (active low)      |
 | `CKE0`    | Clock enable 0                  |
 | `ODT0`    | On-die termination 0            |
-| `RESET_n` | DRAM reset (active low)         |
-| `PAR`     | Command/address parity input (optional/system-dependent) |
+| `RESET_n` | DRAM reset (active low)                                              |
+| `PAR`     | Command/address parity input (optional/system-dependent)             |
+| `PARITY`  | Pin symbol in Table 4 for command/address parity (maps to `PAR` net) |
 | `ALERT_n` | Alert output — CRC/parity error or other events (optional/system-dependent) |
+| `EVENT_n` | Event output (listed as NF in Table 4; connector pin present, OMI v1 NC) |
 
 ---
 
@@ -157,11 +160,13 @@ It is the authoritative reference for edge-pin mapping in Stage 7.5.
 
 These signals exist in the DDR4 UDIMM pin table and must be mapped at the edge connector (as NC or tied per spec). They are not driven in OMI v1's single-rank design.
 
-| Net     | Description                                    |
-|---------|------------------------------------------------|
-| `CKE1`  | Clock enable — rank 1 (unused in v1)           |
-| `ODT1`  | On-die termination — rank 1 (unused in v1)     |
-| `CS1_n` | Chip select — rank 1 (unused in v1, if present in chosen pin table) |
+| Net      | Description                                                          |
+|----------|----------------------------------------------------------------------|
+| `CK1_t`  | Differential clock true — rank 1 (unused in v1)                     |
+| `CK1_c`  | Differential clock complement — rank 1 (unused in v1)               |
+| `CKE1`   | Clock enable — rank 1 (unused in v1)                                 |
+| `ODT1`   | On-die termination — rank 1 (unused in v1)                           |
+| `CS1_n`  | Chip select — rank 1 (unused in v1)                                  |
 
 ---
 
@@ -169,12 +174,12 @@ These signals exist in the DDR4 UDIMM pin table and must be mapped at the edge c
 
 | Group                        | Net Count                   |
 |------------------------------|-----------------------------|
-| Power rails                  | 6                           |
-| CA / CLK bus                 | 31 (incl. `PAR`, `ALERT_n`) |
-| DQ / DQS bus                 | 88 (11 × 8 lanes)           |
-| SPD bus                      | 5                           |
-| Connector-present / unused   | 3                           |
-| **Total**                    | **133**                     |
+| Power rails                  | 7 (incl. `VTT`)                                    |
+| CA / CLK bus                 | 33 (incl. `PAR`, `PARITY`, `ALERT_n`, `EVENT_n`)  |
+| DQ / DQS bus                 | 88 (11 × 8 lanes)                                  |
+| SPD bus                      | 5                                                  |
+| Connector-present / unused   | 5 (incl. `CK1_t`, `CK1_c`)                        |
+| **Total**                    | **138**                                            |
 
 ---
 
