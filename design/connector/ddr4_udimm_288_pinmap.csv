@@ -1,10 +1,12 @@
 pin,symbol,omi_net,group,notes
+1,NC,NC,OTHER,NC in Table 4
 2,VSS,GND,POWER,
 3,DQ4,D0_DQ4,DQ_DQS,byte lane 0
 4,VSS,GND,POWER,
 5,DQ0,D0_DQ0,DQ_DQS,byte lane 0
 6,VSS,GND,POWER,
-7,DM0_n/DBI0_n,D0_DM_DBI_n,DQ_DQS,byte lane 0; NC on x64 module
+7,DM0_n/DBI0_n,D0_DM_DBI_n,DQ_DQS,byte lane 0
+8,NC,NC,OTHER,NC in Table 4
 9,VSS,GND,POWER,
 10,DQ6,D0_DQ6,DQ_DQS,byte lane 0
 11,VSS,GND,POWER,
@@ -14,7 +16,8 @@ pin,symbol,omi_net,group,notes
 15,VSS,GND,POWER,
 16,DQ8,D1_DQ0,DQ_DQS,byte lane 1
 17,VSS,GND,POWER,
-18,DM1_n/DBI1_n,D1_DM_DBI_n,DQ_DQS,byte lane 1; NC on x64 module
+18,DM1_n/DBI1_n,D1_DM_DBI_n,DQ_DQS,byte lane 1
+19,NC,NC,OTHER,NC in Table 4
 20,VSS,GND,POWER,
 21,DQ14,D1_DQ6,DQ_DQS,byte lane 1
 22,VSS,GND,POWER,
@@ -24,7 +27,8 @@ pin,symbol,omi_net,group,notes
 26,VSS,GND,POWER,
 27,DQ16,D2_DQ0,DQ_DQS,byte lane 2
 28,VSS,GND,POWER,
-29,DM2_n/DBI2_n,D2_DM_DBI_n,DQ_DQS,byte lane 2; NC on x64 module
+29,DM2_n/DBI2_n,D2_DM_DBI_n,DQ_DQS,byte lane 2
+30,NC,NC,OTHER,NC in Table 4
 31,VSS,GND,POWER,
 32,DQ22,D2_DQ6,DQ_DQS,byte lane 2
 33,VSS,GND,POWER,
@@ -34,18 +38,28 @@ pin,symbol,omi_net,group,notes
 37,VSS,GND,POWER,
 38,DQ24,D3_DQ0,DQ_DQS,byte lane 3
 39,VSS,GND,POWER,
-40,DM3_n/DBI3_n,D3_DM_DBI_n,DQ_DQS,byte lane 3; NC on x64 module
+40,DM3_n/DBI3_n,D3_DM_DBI_n,DQ_DQS,byte lane 3
+41,NC,NC,OTHER,NC in Table 4
 42,VSS,GND,POWER,
 43,DQ30,D3_DQ6,DQ_DQS,byte lane 3
 44,VSS,GND,POWER,
 45,DQ26,D3_DQ2,DQ_DQS,byte lane 3
 46,VSS,GND,POWER,
+47,CB4/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
+48,VSS,GND,POWER,
+49,CB0/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 50,VSS,GND,POWER,
+51,DM8_n/DBI8_n,NC,OTHER,ECC lane 8; NC on x64 non-ECC module
+52,NC,NC,OTHER,NC in Table 4
 53,VSS,GND,POWER,
+54,CB6/DBI8_n,NC,OTHER,ECC lane 8; NC on x64 non-ECC module
 55,VSS,GND,POWER,
+56,CB2/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 57,VSS,GND,POWER,
 58,RESET_n,RESET_n,CA_CLK,
+59,VDD,VDD,POWER,
 60,CKE0,CKE0,CA_CLK,clock enable rank 0
+61,VDD,VDD,POWER,
 62,ACT_n,ACT_n,CA_CLK,
 63,BG0,BG0,CA_CLK,
 64,VDD,VDD,POWER,
@@ -77,10 +91,14 @@ pin,symbol,omi_net,group,notes
 90,VDD,VDD,POWER,
 91,ODT1,NC,CA_CLK,single-rank v1: unused
 92,VDD,VDD,POWER,
-94,VDD,VDD,POWER,
+93,NC,NC,OTHER,NC in Table 4
+94,VSS,GND,POWER,
 95,DQ36,D4_DQ4,DQ_DQS,byte lane 4
+96,VSS,GND,POWER,
 97,DQ32,D4_DQ0,DQ_DQS,byte lane 4
-99,DM4_n/DBI4_n,D4_DM_DBI_n,DQ_DQS,byte lane 4; NC on x64 module
+98,VSS,GND,POWER,
+99,DM4_n/DBI4_n,D4_DM_DBI_n,DQ_DQS,byte lane 4
+100,NC,NC,OTHER,NC in Table 4
 101,VSS,GND,POWER,
 102,DQ38,D4_DQ6,DQ_DQS,byte lane 4
 103,VSS,GND,POWER,
@@ -90,7 +108,8 @@ pin,symbol,omi_net,group,notes
 107,VSS,GND,POWER,
 108,DQ40,D5_DQ0,DQ_DQS,byte lane 5
 109,VSS,GND,POWER,
-110,DM5_n/DBI5_n,D5_DM_DBI_n,DQ_DQS,byte lane 5; NC on x64 module
+110,DM5_n/DBI5_n,D5_DM_DBI_n,DQ_DQS,byte lane 5
+111,NC,NC,OTHER,NC in Table 4
 112,VSS,GND,POWER,
 113,DQ46,D5_DQ6,DQ_DQS,byte lane 5
 114,VSS,GND,POWER,
@@ -100,15 +119,19 @@ pin,symbol,omi_net,group,notes
 118,VSS,GND,POWER,
 119,DQ48,D6_DQ0,DQ_DQS,byte lane 6
 120,VSS,GND,POWER,
-121,DM6_n/DBI6_n,D6_DM_DBI_n,DQ_DQS,byte lane 6; NC on x64 module
+121,DM6_n/DBI6_n,D6_DM_DBI_n,DQ_DQS,byte lane 6
+122,NC,NC,OTHER,NC in Table 4
 123,VSS,GND,POWER,
 124,DQ54,D6_DQ6,DQ_DQS,byte lane 6
 125,VSS,GND,POWER,
 126,DQ50,D6_DQ2,DQ_DQS,byte lane 6
 127,VSS,GND,POWER,
-129,DQ60,D7_DQ4,DQ_DQS,byte lane 7
-131,DQ56,D7_DQ0,DQ_DQS,byte lane 7
-132,DM7_n/DBI7_n,D7_DM_DBI_n,DQ_DQS,byte lane 7; NC on x64 module
+128,DQ60,D7_DQ4,DQ_DQS,byte lane 7
+129,VSS,GND,POWER,
+130,DQ56,D7_DQ0,DQ_DQS,byte lane 7
+131,VSS,GND,POWER,
+132,DM7_n/DBI7_n,D7_DM_DBI_n,DQ_DQS,byte lane 7
+133,NC,NC,OTHER,NC in Table 4
 134,VSS,GND,POWER,
 135,DQ62,D7_DQ6,DQ_DQS,byte lane 7
 136,VSS,GND,POWER,
@@ -119,6 +142,8 @@ pin,symbol,omi_net,group,notes
 141,SCL,SPD_SCL,SPD,
 142,VPP,VPP,POWER,
 143,VPP,VPP,POWER,
+144,NC,NC,OTHER,NC in Table 4
+145,NC,NC,OTHER,NC in Table 4
 146,VREFCA,VREF,POWER,maps VREFCA->VREF
 147,VSS,GND,POWER,
 148,DQ5,D0_DQ5,DQ_DQS,byte lane 0
@@ -165,15 +190,23 @@ pin,symbol,omi_net,group,notes
 189,VSS,GND,POWER,
 190,DQ27,D3_DQ3,DQ_DQS,byte lane 3
 191,VSS,GND,POWER,
+192,CB5/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 193,VSS,GND,POWER,
+194,CB1/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 195,VSS,GND,POWER,
+196,DQS8_c,NC,OTHER,ECC lane 8 strobe; NC on x64 non-ECC module
+197,DQS8_t,NC,OTHER,ECC lane 8 strobe; NC on x64 non-ECC module
 198,VSS,GND,POWER,
+199,CB7/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 200,VSS,GND,POWER,
+201,CB3/NC,NC,OTHER,ECC/CB lane; NC on x64 non-ECC module
 202,VSS,GND,POWER,
 203,CKE1,NC,CA_CLK,single-rank v1: unused
-205,VSS,GND,POWER,
+204,VDD,VDD,POWER,
+205,NC,NC,OTHER,NC in Table 4
+206,VDD,VDD,POWER,
 207,BG1,BG1,CA_CLK,
-208,ALERT_n,ALERT_n,CA_CLK,optional/system-dependent; tie-off TBD
+208,ALERT_n,ALERT_n,CA_CLK,routed; host pull-up assumed
 209,VDD,VDD,POWER,
 210,A11,A11,CA_CLK,
 211,A7,A7,CA_CLK,
@@ -187,16 +220,22 @@ pin,symbol,omi_net,group,notes
 219,CK1_c,NC,CA_CLK,single-rank v1: unused
 220,VDD,VDD,POWER,
 221,VTT,VTT,POWER,termination rail — host supplied
-222,PARITY,PARITY,CA_CLK,command/address parity input
+222,PARITY,PARITY,CA_CLK,routed; parity not enabled in v1
 223,VDD,VDD,POWER,
 224,BA1,BA1,CA_CLK,
 225,A10/AP,A10,CA_CLK,auto precharge / address bit 10
 226,VDD,VDD,POWER,
+227,NC,NC,OTHER,NC in Table 4
 228,WE_n/A14,A14,CA_CLK,write enable / address bit 14
 229,VDD,VDD,POWER,
+230,NC,NC,OTHER,density-dependent; A17 NC for 8Gb-class devices
+231,VDD,VDD,POWER,
 232,A13,A13,CA_CLK,
-234,VDD,VDD,POWER,
+233,VDD,VDD,POWER,
+234,NC,NC,OTHER,NC in Table 4
+235,NC,NC,OTHER,NC in Table 4
 236,VDD,VDD,POWER,
+237,NC,NC,OTHER,NC in Table 4
 238,SA2,SA2,SPD,
 239,VDD,VDD,POWER,
 240,DQ37,D4_DQ5,DQ_DQS,byte lane 4

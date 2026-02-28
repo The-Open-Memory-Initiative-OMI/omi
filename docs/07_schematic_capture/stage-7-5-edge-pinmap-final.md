@@ -4,7 +4,7 @@
 Open Memory Initiative (OMI) — OMI v1 DDR4 UDIMM
 
 ## Status
-✅ Frozen (Steps 4 + 5 complete; NC sweep pending)
+✅ Frozen (Final)
 
 ---
 
@@ -84,35 +84,46 @@ DMx_n      →  D{x}_DM_DBI_n
 | **NC (no connect)** | `omi_net = NC`; edge pin left unconnected. |
 | **NF (not fitted)** | `omi_net = NC`; `notes = "NF in Table 4"`. Only pin 78 (`EVENT_n`) has this designation in Table 4. |
 | **Rank-1 unused** | `omi_net = NC`; `notes = "single-rank v1: unused"`. Applies to: `CK1_t`, `CK1_c`, `CS1_n`, `CKE1`, `ODT1`. These edge pins are present in the connector but not driven. |
-| **DM/DBI on x64** | `omi_net = D{x}_DM_DBI_n` (net reserved); `notes` records that these are NC in the x64 module variant. |
-| **ECC / CB lane** | Pins `CB0–CB7`, `DQS8_t/c`, `DM8_n/DBI8_n` — all NC on this x64 non-ECC module. Mapped in the NC sweep. |
+| **DM/DBI on x64** | DM/DBI pins exist on x64. Mapped to `D{x}_DM_DBI_n`. Whether DBI is enabled is a host/controller configuration choice; OMI v1 maps pins electrically but does not assume DBI enabled. |
+| **ECC / CB lane** | Pins `CB0–CB7`, `DQS8_t/c`, `DM8_n/DBI8_n` — all `NC` on this x64 non-ECC module. |
+| **A17 (density-dependent)** | `omi_net = NC`; `notes = "density-dependent; NC for 8Gb-class devices"`. A17 is only used for ≥16Gb density DRAMs. Pin 230 is NC in this module's Table 4. Net manifest retains A17 as optional. |
 
 ---
 
-## 6. Known Unknowns & Open Decisions
+## 6. Locked Policies (v1)
 
-| Signal | Status | Decision needed |
-|--------|--------|-----------------|
-| `ALERT_n` (pin 208) | **Routed** — `omi_net = ALERT_n` | Tie-off vs. edge connector: host-side pull-up assumed. Finalize before v1 sign-off. |
-| `PARITY` (pin 222) | **Routed** — `omi_net = PARITY` | Parity enable is a mode-register setting. OMI v1 leaves pin wired but does not enable parity. |
-| `A17` (pin 230) | **NC** — confirmed NC in Table 4 for 8GB SR x8 | Only valid for ≥16Gb density. Not applicable to OMI v1. |
+| Signal | Status | Policy |
+|--------|--------|--------|
+| `ALERT_n` (pin 208) | **Routed** — `omi_net = ALERT_n` | Host pull-up assumed; no on-DIMM pull-up required by OMI v1. |
+| `PARITY` (pin 222) | **Routed** — `omi_net = PARITY` | OMI v1 does not enable parity; signal wiring preserved for compatibility. |
 | `VTT` (pins 77, 221) | **Routed** — `omi_net = VTT` | Rail supplied by host platform. OMI module does not generate VTT. |
-| `WP` (SPD EEPROM) | **Not a connector pin** — tied to GND on EEPROM | Write-protect strap decision: remains GND for v1 development. |
+| `WP` (SPD EEPROM) | **Not a connector pin** — tied to GND on EEPROM | Remains GND for v1 development. |
 
 ---
 
-## 7. Coverage After Steps 4 + 5
+## 7. Coverage
 
 | Group | Rows |
 |-------|------|
-| POWER (VDD/VSS/VPP/VREF/VTT/VDDSPD) | 120 |
+| POWER (VDD/VSS/VPP/VREF/VTT/VDDSPD) | 129 |
 | DQ\_DQS (DQ0–63, DQS0–7, DM0–7) | 88 |
 | CA\_CLK (address, bank, clk, control) | 35 |
+| OTHER (NC/NF/ECC/CB/reserved) | 31 |
 | SPD (SCL/SDA/SA0–SA2) | 5 |
-| OTHER (EVENT\_n NF) | 1 |
-| **Mapped total** | **249** |
-| **Remaining (NC/ECC/CB/reserved)** | ~39 |
 | **Total connector pins** | **288** |
+
+---
+
+## 8. CSV Integrity Checks (required before Frozen)
+
+| Check | Expected | Actual |
+|-------|----------|--------|
+| `row_count` | 288 | **288** ✅ |
+| `unique(pin)` | 288 | **288** ✅ |
+| `pins covered` | {1..288} | **{1..288}** ✅ |
+| No duplicate pins | 0 | **0** ✅ |
+
+Integrity verified 2026-02-28. All 288 edge contacts mapped with no gaps or duplicates.
 
 ---
 
