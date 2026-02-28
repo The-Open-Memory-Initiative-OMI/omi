@@ -3,7 +3,7 @@
 The **Open Memory Initiative (OMI)** is a community-driven engineering project focused on making system memory **understandable, reproducible, and buildable**.
 
 OMI treats memory as a *first-class architectural system*, not a black box.
-The project emphasizes **documentation-first design**, explicit constraints, and reproducible validation — starting with mature PC DDR technologies.
+The project emphasizes **documentation-first design**, explicit constraints, and reproducible validation - starting with mature PC DDR technologies.
 
 This is an **engineering-first, correctness-oriented effort**, not a product launch.
 
