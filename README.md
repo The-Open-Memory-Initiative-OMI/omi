@@ -163,10 +163,19 @@ See [CHARTER.md](./CHARTER.md) for the full governance model.
 
 ## License
 
-Licensing details will be finalized as technical artifacts mature.
+This project uses a multi-license approach to properly cover all content types:
 
-Until then, all contributions must comply with the openness and redistribution principles defined in the project charter.
+- **Hardware designs** (schematics, PCB layouts, block decomposition, design artifacts):
+  Licensed under [CERN Open Hardware Licence Version 2 — Strongly Reciprocal (CERN-OHL-S-2.0)](LICENSE)
 
+- **Documentation** (charter, scope, methodology, learning materials):
+  Licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE-docs)
+
+- **Software and code** (validation scripts, test tooling, automation):
+  Licensed under [Apache License 2.0](LICENSE-software)
+
+All contributions must comply with these licenses and with the openness and
+redistribution principles defined in [CHARTER.md](CHARTER.md).
 ---
 
 ## Questions & Discussion
