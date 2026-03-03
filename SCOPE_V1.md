@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # OMI v1 Scope Definition
 
 This document defines the explicit scope boundaries for **Open Memory Initiative — Version 1 (OMI v1)**.
@@ -157,3 +158,4 @@ OMI v1 is intentionally narrow.
 **It is a requirement for success.**
 
 One clear, reproducible design is more valuable than many unfinished ideas.
+

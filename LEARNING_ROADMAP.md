@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # Learning Roadmap
 **Open Memory Initiative (OMI)**
 
@@ -250,3 +251,4 @@ OMI values:
 
 > Open memory is not given.  
 > It is built; carefully, transparently, and together.
+

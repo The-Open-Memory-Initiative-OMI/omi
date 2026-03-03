@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # Start Here
 
 Welcome to the Open Memory Initiative.
@@ -230,3 +231,4 @@ Someone will help you find the right entry point.
 > Correctness first. Reproducibility always.
 >
 > If that aligns with how you work, welcome aboard.
+

@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # The Open Memory Initiative (OMI)
 
 The **Open Memory Initiative (OMI)** is a community-driven engineering project focused on making system memory **understandable, reproducible, and buildable**.
@@ -189,3 +190,4 @@ Clear questions help build a clear project.
 
 > OMI values careful, transparent engineering over speed.
 > Correctness first. Reproducibility always.
+

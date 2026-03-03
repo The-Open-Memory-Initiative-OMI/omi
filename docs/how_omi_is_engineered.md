@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # How OMI Is Engineered
 
 OMI (Open Memory Initiative) is not just an open hardware project.
@@ -206,3 +207,4 @@ OMI is an attempt to do something harder:
 > **Build memory systems that make sense — even years later.**
 
 If that excites you, welcome.
+

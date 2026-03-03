@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # The Open Memory Initiative (OMI) 
 
 #  An Open, Community-Built DDR Memory Initiative
@@ -503,4 +504,5 @@ OMI operates strictly within legal and ethical limits. The project does not soli
 ### 12.5 Living Document Notice:
 
 This charter is a living document. Revisions may occur as the project evolves, but changes must preserve the core principles defined in Sections 4 and 6\. Any substantial modification to scope, openness, or governance must be discussed publicly and justified clearly. The appendix may expand over time to include references, lessons learned, and historical context as the project matures.
+
 

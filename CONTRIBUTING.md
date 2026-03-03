@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 # **Contributing to the Open Memory Initiative (OMI)**
 
 Thank you for your interest in contributing to the Open Memory Initiative.
@@ -162,4 +163,5 @@ Clear questions help build a clear project.
 
 **OMI values careful, transparent engineering over speed.**  
  **If that aligns with how you like to work, you are welcome here.**
+
 
