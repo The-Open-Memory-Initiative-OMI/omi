@@ -1,4 +1,5 @@
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # The Open Memory Initiative (OMI)
 
 The **Open Memory Initiative (OMI)** is a community-driven engineering project focused on making system memory **understandable, reproducible, and buildable**.
@@ -168,15 +169,18 @@ This project uses a multi-license approach to properly cover all content types:
 
 - **Hardware designs** (schematics, PCB layouts, block decomposition, design artifacts):
   Licensed under [CERN Open Hardware Licence Version 2 — Strongly Reciprocal (CERN-OHL-S-2.0)](LICENSE)
-
 - **Documentation** (charter, scope, methodology, learning materials):
   Licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE-docs)
-
 - **Software and code** (validation scripts, test tooling, automation):
   Licensed under [Apache License 2.0](LICENSE-software)
 
 All contributions must comply with these licenses and with the openness and
 redistribution principles defined in [CHARTER.md](CHARTER.md).
+
+## Publications
+
+- [OMI Enters Stage 8: Turning a DDR4 UDIMM Schematic into Verifiable Hardware](https://medium.com/@mefe.sensoy/omi-enters-stage-8-turning-a-ddr4-udimm-schematic-into-verifiable-hardware-c6d252b0e1d3)
+
 ---
 
 ## Questions & Discussion
@@ -190,4 +194,3 @@ Clear questions help build a clear project.
 
 > OMI values careful, transparent engineering over speed.
 > Correctness first. Reproducibility always.
-
