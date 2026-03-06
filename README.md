@@ -195,3 +195,4 @@ Clear questions help build a clear project.
 
 > OMI values careful, transparent engineering over speed.
 > Correctness first. Reproducibility always.
+> `<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->`
