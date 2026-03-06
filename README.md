@@ -176,7 +176,12 @@ This project uses a multi-license approach to properly cover all content types:
 
 All contributions must comply with these licenses and with the openness and
 redistribution principles defined in [CHARTER.md](CHARTER.md).
-------------------------------------------------
+
+## Publications
+
+- [OMI Enters Stage 8: Turning a DDR4 UDIMM Schematic into Verifiable Hardware](https://medium.com/@mefe.sensoy/omi-enters-stage-8-turning-a-ddr4-udimm-schematic-into-verifiable-hardware-c6d252b0e1d3)
+
+---
 
 ## Questions & Discussion
 
