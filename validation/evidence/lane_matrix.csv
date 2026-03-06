@@ -1,0 +1,89 @@
+lane,net_type,omi_net,pin,symbol,notes
+0,DQ,D0_DQ0,5,DQ0,byte lane 0
+0,DQ,D0_DQ1,150,DQ1,byte lane 0
+0,DQ,D0_DQ2,12,DQ2,byte lane 0
+0,DQ,D0_DQ3,157,DQ3,byte lane 0
+0,DQ,D0_DQ4,3,DQ4,byte lane 0
+0,DQ,D0_DQ5,148,DQ5,byte lane 0
+0,DQ,D0_DQ6,10,DQ6,byte lane 0
+0,DQ,D0_DQ7,155,DQ7,byte lane 0
+0,DQS,D0_DQS_c,152,DQS0_c,byte lane 0 strobe complement
+0,DQS,D0_DQS_t,153,DQS0_t,byte lane 0 strobe true
+0,DM_DBI,D0_DM_DBI_n,7,DM0_n/DBI0_n,byte lane 0
+1,DQ,D1_DQ0,16,DQ8,byte lane 1
+1,DQ,D1_DQ1,161,DQ9,byte lane 1
+1,DQ,D1_DQ2,23,DQ10,byte lane 1
+1,DQ,D1_DQ3,168,DQ11,byte lane 1
+1,DQ,D1_DQ4,14,DQ12,byte lane 1
+1,DQ,D1_DQ5,159,DQ13,byte lane 1
+1,DQ,D1_DQ6,21,DQ14,byte lane 1
+1,DQ,D1_DQ7,166,DQ15,byte lane 1
+1,DQS,D1_DQS_c,163,DQS1_c,byte lane 1 strobe complement
+1,DQS,D1_DQS_t,164,DQS1_t,byte lane 1 strobe true
+1,DM_DBI,D1_DM_DBI_n,18,DM1_n/DBI1_n,byte lane 1
+2,DQ,D2_DQ0,27,DQ16,byte lane 2
+2,DQ,D2_DQ1,172,DQ17,byte lane 2
+2,DQ,D2_DQ2,34,DQ18,byte lane 2
+2,DQ,D2_DQ3,179,DQ19,byte lane 2
+2,DQ,D2_DQ4,25,DQ20,byte lane 2
+2,DQ,D2_DQ5,170,DQ21,byte lane 2
+2,DQ,D2_DQ6,32,DQ22,byte lane 2
+2,DQ,D2_DQ7,177,DQ23,byte lane 2
+2,DQS,D2_DQS_c,174,DQS2_c,byte lane 2 strobe complement
+2,DQS,D2_DQS_t,175,DQS2_t,byte lane 2 strobe true
+2,DM_DBI,D2_DM_DBI_n,29,DM2_n/DBI2_n,byte lane 2
+3,DQ,D3_DQ0,38,DQ24,byte lane 3
+3,DQ,D3_DQ1,183,DQ25,byte lane 3
+3,DQ,D3_DQ2,45,DQ26,byte lane 3
+3,DQ,D3_DQ3,190,DQ27,byte lane 3
+3,DQ,D3_DQ4,36,DQ28,byte lane 3
+3,DQ,D3_DQ5,181,DQ29,byte lane 3
+3,DQ,D3_DQ6,43,DQ30,byte lane 3
+3,DQ,D3_DQ7,188,DQ31,byte lane 3
+3,DQS,D3_DQS_c,185,DQS3_c,byte lane 3 strobe complement
+3,DQS,D3_DQS_t,186,DQS3_t,byte lane 3 strobe true
+3,DM_DBI,D3_DM_DBI_n,40,DM3_n/DBI3_n,byte lane 3
+4,DQ,D4_DQ0,97,DQ32,byte lane 4
+4,DQ,D4_DQ1,242,DQ33,byte lane 4
+4,DQ,D4_DQ2,104,DQ34,byte lane 4
+4,DQ,D4_DQ3,249,DQ35,byte lane 4
+4,DQ,D4_DQ4,95,DQ36,byte lane 4
+4,DQ,D4_DQ5,240,DQ37,byte lane 4
+4,DQ,D4_DQ6,102,DQ38,byte lane 4
+4,DQ,D4_DQ7,247,DQ39,byte lane 4
+4,DQS,D4_DQS_c,244,DQS4_c,byte lane 4 strobe complement
+4,DQS,D4_DQS_t,245,DQS4_t,byte lane 4 strobe true
+4,DM_DBI,D4_DM_DBI_n,99,DM4_n/DBI4_n,byte lane 4
+5,DQ,D5_DQ0,108,DQ40,byte lane 5
+5,DQ,D5_DQ1,253,DQ41,byte lane 5
+5,DQ,D5_DQ2,115,DQ42,byte lane 5
+5,DQ,D5_DQ3,260,DQ43,byte lane 5
+5,DQ,D5_DQ4,106,DQ44,byte lane 5
+5,DQ,D5_DQ5,251,DQ45,byte lane 5
+5,DQ,D5_DQ6,113,DQ46,byte lane 5
+5,DQ,D5_DQ7,258,DQ47,byte lane 5
+5,DQS,D5_DQS_c,255,DQS5_c,byte lane 5 strobe complement
+5,DQS,D5_DQS_t,256,DQS5_t,byte lane 5 strobe true
+5,DM_DBI,D5_DM_DBI_n,110,DM5_n/DBI5_n,byte lane 5
+6,DQ,D6_DQ0,119,DQ48,byte lane 6
+6,DQ,D6_DQ1,264,DQ49,byte lane 6
+6,DQ,D6_DQ2,126,DQ50,byte lane 6
+6,DQ,D6_DQ3,271,DQ51,byte lane 6
+6,DQ,D6_DQ4,117,DQ52,byte lane 6
+6,DQ,D6_DQ5,262,DQ53,byte lane 6
+6,DQ,D6_DQ6,124,DQ54,byte lane 6
+6,DQ,D6_DQ7,269,DQ55,byte lane 6
+6,DQS,D6_DQS_c,266,DQS6_c,byte lane 6 strobe complement
+6,DQS,D6_DQS_t,267,DQS6_t,byte lane 6 strobe true
+6,DM_DBI,D6_DM_DBI_n,121,DM6_n/DBI6_n,byte lane 6
+7,DQ,D7_DQ0,130,DQ56,byte lane 7
+7,DQ,D7_DQ1,275,DQ57,byte lane 7
+7,DQ,D7_DQ2,137,DQ58,byte lane 7
+7,DQ,D7_DQ3,282,DQ59,byte lane 7
+7,DQ,D7_DQ4,128,DQ60,byte lane 7
+7,DQ,D7_DQ5,273,DQ61,byte lane 7
+7,DQ,D7_DQ6,135,DQ62,byte lane 7
+7,DQ,D7_DQ7,280,DQ63,byte lane 7
+7,DQS,D7_DQS_c,277,DQS7_c,byte lane 7 strobe complement
+7,DQS,D7_DQS_t,278,DQS7_t,byte lane 7 strobe true
+7,DM_DBI,D7_DM_DBI_n,132,DM7_n/DBI7_n,byte lane 7

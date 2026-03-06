@@ -1,0 +1,176 @@
+{
+  "tool": "verify_naming.py",
+  "version": "1.0.0",
+  "timestamp": "2026-03-06T17:22:34.989971+00:00",
+  "status": "PASS",
+  "input_files": {
+    "reference_csv": "design\\connector\\ddr4_udimm_288_pinmap.csv",
+    "reference_csv_sha256": "5b30e30d37293d0ea1f65ad08f4a162f285a102fb0955541aa9b5fee47714c14"
+  },
+  "checks": [
+    {
+      "name": "Byte-Lane Completeness (11 nets/lane)",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "lane_0": 11,
+        "lane_1": 11,
+        "lane_2": 11,
+        "lane_3": 11,
+        "lane_4": 11,
+        "lane_5": 11,
+        "lane_6": 11,
+        "lane_7": 11,
+        "total_dq_dqs_nets": 88
+      }
+    },
+    {
+      "name": "Byte-Lane Isolation",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "violations": []
+      }
+    },
+    {
+      "name": "DQ Bit Uniqueness Per Lane",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "name": "DQS Differential Pairing",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "name": "DM/DBI Presence Per Lane",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "name": "ECC Lane 8 Absent (Non-ECC)",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "name": "CA/CLK Bus Completeness",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "expected": [
+          "A0",
+          "A1",
+          "A10",
+          "A11",
+          "A12",
+          "A13",
+          "A14",
+          "A15",
+          "A16",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "A8",
+          "A9",
+          "ACT_n",
+          "ALERT_n",
+          "BA0",
+          "BA1",
+          "BG0",
+          "BG1",
+          "CKE0",
+          "CK_c",
+          "CK_t",
+          "CS0_n",
+          "ODT0",
+          "PARITY",
+          "RESET_n"
+        ],
+        "found": [
+          "A0",
+          "A1",
+          "A10",
+          "A11",
+          "A12",
+          "A13",
+          "A14",
+          "A15",
+          "A16",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "A8",
+          "A9",
+          "ACT_n",
+          "ALERT_n",
+          "BA0",
+          "BA1",
+          "BG0",
+          "BG1",
+          "CKE0",
+          "CK_c",
+          "CK_t",
+          "CS0_n",
+          "ODT0",
+          "PARITY",
+          "RESET_n"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "name": "Clock Differential Pair",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "name": "Power Domain Isolation",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "power_nets_found": [
+          "GND",
+          "VDD",
+          "VDDSPD",
+          "VPP",
+          "VREF",
+          "VTT"
+        ],
+        "missing": [],
+        "pins_per_net": {
+          "GND": 93,
+          "VDD": 27,
+          "VTT": 2,
+          "VPP": 5,
+          "VREF": 1,
+          "VDDSPD": 1
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_checks": 9,
+    "passed": 9,
+    "failed": 0
+  }
+}

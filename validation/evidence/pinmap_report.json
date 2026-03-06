@@ -1,0 +1,95 @@
+{
+  "tool": "verify_pinmap.py",
+  "version": "1.0.0",
+  "timestamp": "2026-03-06T17:22:34.830791+00:00",
+  "status": "PASS",
+  "input_files": {
+    "reference_csv": "design\\connector\\ddr4_udimm_288_pinmap.csv",
+    "reference_csv_sha256": "5b30e30d37293d0ea1f65ad08f4a162f285a102fb0955541aa9b5fee47714c14",
+    "manifest": "docs\\07_schematic_capture\\stage-7-5-net-manifest.md",
+    "manifest_sha256": "72cd55b3794288884ce3f0ab00b524ee2891948de36df536febef34522d60b1c"
+  },
+  "checks": [
+    {
+      "name": "Pin Completeness (288/288)",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "total_rows": 288,
+        "unique_pins": 288,
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    {
+      "name": "Group Validity",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "invalid_groups": []
+      }
+    },
+    {
+      "name": "Net Naming Conformance",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "violation_count": 0,
+        "violating_pins": []
+      }
+    },
+    {
+      "name": "ECC Exclusion (Non-ECC x64)",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "ecc_violations": []
+      }
+    },
+    {
+      "name": "Single-Rank Exclusion (1R)",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "rank1_violations": []
+      }
+    },
+    {
+      "name": "Power Net Presence",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "power_nets_found": [
+          "GND",
+          "VDD",
+          "VDDSPD",
+          "VPP",
+          "VREF",
+          "VTT"
+        ],
+        "missing_power_nets": []
+      }
+    },
+    {
+      "name": "Manifest Cross-Reference",
+      "status": "PASS",
+      "errors": [],
+      "warnings": [],
+      "details": {
+        "manifest_net_count": 138,
+        "csv_unique_nets": 128
+      }
+    }
+  ],
+  "summary": {
+    "total_checks": 7,
+    "passed": 7,
+    "failed": 0
+  }
+}
