@@ -49,18 +49,19 @@ OMI is active and progressing deliberately. The OMI v1 target is a **reviewable 
   - 7.5 UDIMM Edge Pin Map (frozen — 288/288 pins mapped, no duplicates, no missing)
   - 7.6 Interface Summary (frozen)
   - 7.7 Stage 7 Closure (frozen — quality gates passed, handoff to Stage 8)
+- **Stage 8 — Validation & Bring-Up Strategy:**
+  - 8.1 Validation Platforms (defined)
+  - 8.2 Bring-Up Ladder (defined)
+  - 8.3 Test Matrix (defined)
+  - 8.4 Reporting Template (defined)
+  - 8.5 Failure Signatures (defined)
 
 ### In Progress
 
-- **Stage 8 — Validation & Bring-Up Strategy**
-  - Validation platform selection
-  - Bring-up procedure definition
-  - Success criteria and failure mode documentation
-  - Review checklists and structured reporting templates
+- **Stage 9** — Minimal Reference Schematic (correctness-first, one rank, no optimizations)
 
 ### Upcoming
 
-- **Stage 9** — Minimal Reference Schematic (correctness-first, one rank, no optimizations)
 - **Stage 10** — Layout & SI/PI Guidelines
 
 OMI prioritizes **structural correctness and reproducibility** over speed.
