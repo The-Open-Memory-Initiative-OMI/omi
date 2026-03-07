@@ -1,0 +1,314 @@
+session,group,pin,symbol,omi_net,measurement_type,expected_value,threshold_min,threshold_max,notes
+S1_Continuity,1A_GND,2,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,4,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,6,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,9,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,11,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,13,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,15,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,17,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,20,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,22,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,24,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,26,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,28,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,31,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,33,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,35,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,37,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,39,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,42,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,44,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,46,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,48,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,50,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,53,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,55,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,57,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,94,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,96,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,98,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,101,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,103,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,105,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,107,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,109,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,112,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,114,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,116,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,118,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,120,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,123,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,125,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,127,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,129,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,131,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,134,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,136,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,138,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,147,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,149,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,151,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,154,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,156,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,158,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,160,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,162,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,165,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,167,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,169,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,171,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,173,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,176,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,178,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,180,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,182,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,184,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,187,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,189,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,191,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,193,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,195,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,198,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,200,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,202,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,241,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,243,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,246,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,248,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,250,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,252,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,254,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,257,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,259,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,261,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,263,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,265,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,268,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,270,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,272,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,274,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,276,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,279,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,281,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1A_GND,283,VSS,GND,resistance,<=1.0 ohm,0,1.0,Measure resistance to chassis/reference GND
+S1_Continuity,1B_Power_Rail,59,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,61,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,64,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,67,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,70,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,73,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,76,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,80,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,83,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,85,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,88,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,90,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,92,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,204,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,206,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,209,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,212,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,215,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,217,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,220,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,223,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,226,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,229,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,231,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,233,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,236,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,239,VDD,VDD,continuity,PASS,,,Verify continuity within VDD rail
+S1_Continuity,1B_Power_Rail,284,VDDSPD,VDDSPD,continuity,PASS,,,Verify continuity within VDDSPD rail
+S1_Continuity,1B_Power_Rail,142,VPP,VPP,continuity,PASS,,,Verify continuity within VPP rail
+S1_Continuity,1B_Power_Rail,143,VPP,VPP,continuity,PASS,,,Verify continuity within VPP rail
+S1_Continuity,1B_Power_Rail,286,VPP,VPP,continuity,PASS,,,Verify continuity within VPP rail
+S1_Continuity,1B_Power_Rail,287,VPP,VPP,continuity,PASS,,,Verify continuity within VPP rail
+S1_Continuity,1B_Power_Rail,288,VPP,VPP,continuity,PASS,,,Verify continuity within VPP rail
+S1_Continuity,1B_Power_Rail,146,VREFCA,VREF,continuity,PASS,,,Verify continuity within VREF rail
+S1_Continuity,1B_Power_Rail,77,VTT,VTT,continuity,PASS,,,Verify continuity within VTT rail
+S1_Continuity,1B_Power_Rail,221,VTT,VTT,continuity,PASS,,,Verify continuity within VTT rail
+S1_Continuity,1C_DQ_DQS,3,DQ4,D0_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,5,DQ0,D0_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,7,DM0_n/DBI0_n,D0_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,10,DQ6,D0_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,12,DQ2,D0_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,14,DQ12,D1_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,16,DQ8,D1_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,18,DM1_n/DBI1_n,D1_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,21,DQ14,D1_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,23,DQ10,D1_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,25,DQ20,D2_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,27,DQ16,D2_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,29,DM2_n/DBI2_n,D2_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,32,DQ22,D2_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,34,DQ18,D2_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,36,DQ28,D3_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,38,DQ24,D3_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,40,DM3_n/DBI3_n,D3_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,43,DQ30,D3_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,45,DQ26,D3_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,95,DQ36,D4_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,97,DQ32,D4_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,99,DM4_n/DBI4_n,D4_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,102,DQ38,D4_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,104,DQ34,D4_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,106,DQ44,D5_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,108,DQ40,D5_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,110,DM5_n/DBI5_n,D5_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,113,DQ46,D5_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,115,DQ42,D5_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,117,DQ52,D6_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,119,DQ48,D6_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,121,DM6_n/DBI6_n,D6_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,124,DQ54,D6_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,126,DQ50,D6_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,128,DQ60,D7_DQ4,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,130,DQ56,D7_DQ0,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,132,DM7_n/DBI7_n,D7_DM_DBI_n,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,135,DQ62,D7_DQ6,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,137,DQ58,D7_DQ2,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,148,DQ5,D0_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,150,DQ1,D0_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,152,DQS0_c,D0_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,153,DQS0_t,D0_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,155,DQ7,D0_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,157,DQ3,D0_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D0)
+S1_Continuity,1C_DQ_DQS,159,DQ13,D1_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,161,DQ9,D1_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,163,DQS1_c,D1_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,164,DQS1_t,D1_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,166,DQ15,D1_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,168,DQ11,D1_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D1)
+S1_Continuity,1C_DQ_DQS,170,DQ21,D2_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,172,DQ17,D2_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,174,DQS2_c,D2_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,175,DQS2_t,D2_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,177,DQ23,D2_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,179,DQ19,D2_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D2)
+S1_Continuity,1C_DQ_DQS,181,DQ29,D3_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,183,DQ25,D3_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,185,DQS3_c,D3_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,186,DQS3_t,D3_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,188,DQ31,D3_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,190,DQ27,D3_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D3)
+S1_Continuity,1C_DQ_DQS,240,DQ37,D4_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,242,DQ33,D4_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,244,DQS4_c,D4_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,245,DQS4_t,D4_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,247,DQ39,D4_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,249,DQ35,D4_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D4)
+S1_Continuity,1C_DQ_DQS,251,DQ45,D5_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,253,DQ41,D5_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,255,DQS5_c,D5_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,256,DQS5_t,D5_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,258,DQ47,D5_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,260,DQ43,D5_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D5)
+S1_Continuity,1C_DQ_DQS,262,DQ53,D6_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,264,DQ49,D6_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,266,DQS6_c,D6_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,267,DQS6_t,D6_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,269,DQ55,D6_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,271,DQ51,D6_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D6)
+S1_Continuity,1C_DQ_DQS,273,DQ61,D7_DQ5,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,275,DQ57,D7_DQ1,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,277,DQS7_c,D7_DQS_c,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,278,DQS7_t,D7_DQS_t,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,280,DQ63,D7_DQ7,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1C_DQ_DQS,282,DQ59,D7_DQ3,continuity,PASS,,10.0,Edge connector to DRAM pad (D7)
+S1_Continuity,1D_CA_CLK,58,RESET_n,RESET_n,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,60,CKE0,CKE0,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,62,ACT_n,ACT_n,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,63,BG0,BG0,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,65,A12/BC_n,A12,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,66,A9,A9,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,68,A8,A8,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,69,A6,A6,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,71,A3,A3,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,72,A1,A1,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,74,CK0_t,CK_t,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,75,CK0_c,CK_c,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,79,A0,A0,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,81,BA0,BA0,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,82,RAS_n/A16,A16,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,84,CS0_n,CS0_n,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,86,CAS_n/A15,A15,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,87,ODT0,ODT0,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,207,BG1,BG1,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,208,ALERT_n,ALERT_n,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,210,A11,A11,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,211,A7,A7,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,213,A5,A5,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,214,A4,A4,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,216,A2,A2,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,222,PARITY,PARITY,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,224,BA1,BA1,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,225,A10/AP,A10,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,228,WE_n/A14,A14,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1D_CA_CLK,232,A13,A13,continuity,PASS,,10.0,Edge connector to bus/DRAM
+S1_Continuity,1E_SPD,139,SA0,SA0,continuity,PASS,,10.0,Edge connector to SPD EEPROM
+S1_Continuity,1E_SPD,140,SA1,SA1,continuity,PASS,,10.0,Edge connector to SPD EEPROM
+S1_Continuity,1E_SPD,141,SCL,SPD_SCL,continuity,PASS,,10.0,Edge connector to SPD EEPROM
+S1_Continuity,1E_SPD,238,SA2,SA2,continuity,PASS,,10.0,Edge connector to SPD EEPROM
+S1_Continuity,1E_SPD,285,SDA,SPD_SDA,continuity,PASS,,10.0,Edge connector to SPD EEPROM
+S1_Continuity,1F_NC_Isolation,1,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,8,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,19,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,30,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,41,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,47,CB4/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,49,CB0/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,51,DM8_n/DBI8_n,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,52,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,54,CB6/DBI8_n,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,56,CB2/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,78,EVENT_n,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,89,CS1_n,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,91,ODT1,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,93,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,100,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,111,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,122,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,133,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,144,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,145,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,192,CB5/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,194,CB1/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,196,DQS8_c,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,197,DQS8_t,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,199,CB7/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,201,CB3/NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,203,CKE1,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,205,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,218,CK1_t,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,219,CK1_c,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,227,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,230,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,234,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,235,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S1_Continuity,1F_NC_Isolation,237,NC,NC,isolation,>=1 Mohm,1000000,,Verify no short to adjacent pins
+S2_PDN,2A_Rail_Voltage,59,VDD,VDD,voltage,1.20 V,1.140,1.260,"Measure VDD rail voltage (powered, with host)"
+S2_PDN,2A_Rail_Voltage,142,VPP,VPP,voltage,2.50 V,2.375,2.625,"Measure VPP rail voltage (powered, with host)"
+S2_PDN,2A_Rail_Voltage,284,VDDSPD,VDDSPD,voltage,3.30 V,2.200,3.600,"Measure VDDSPD rail voltage (powered, with host)"
+S2_PDN,2A_Rail_Voltage,77,VTT,VTT,voltage,0.60 V,0.540,0.660,"Measure VTT rail voltage (powered, with host)"
+S2_PDN,2A_Rail_Voltage,146,VREFCA,VREF,voltage,0.60 V,0.540,0.660,"Measure VREF rail voltage (powered, with host)"
+S2_PDN,2B_Rail_Isolation,59,VDD(pin 59) <-> VPP(pin 142),VDD_to_VPP,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDD to VPP
+S2_PDN,2B_Rail_Isolation,59,VDD(pin 59) <-> VDDSPD(pin 284),VDD_to_VDDSPD,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDD to VDDSPD
+S2_PDN,2B_Rail_Isolation,59,VDD(pin 59) <-> VTT(pin 77),VDD_to_VTT,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDD to VTT
+S2_PDN,2B_Rail_Isolation,59,VDD(pin 59) <-> VREF(pin 146),VDD_to_VREF,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDD to VREF
+S2_PDN,2B_Rail_Isolation,59,VDD(pin 59) <-> GND(pin 2),VDD_to_GND,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDD to GND
+S2_PDN,2B_Rail_Isolation,142,VPP(pin 142) <-> VDDSPD(pin 284),VPP_to_VDDSPD,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VPP to VDDSPD
+S2_PDN,2B_Rail_Isolation,142,VPP(pin 142) <-> GND(pin 2),VPP_to_GND,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VPP to GND
+S2_PDN,2B_Rail_Isolation,284,VDDSPD(pin 284) <-> GND(pin 2),VDDSPD_to_GND,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VDDSPD to GND
+S2_PDN,2B_Rail_Isolation,77,VTT(pin 77) <-> GND(pin 2),VTT_to_GND,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VTT to GND
+S2_PDN,2B_Rail_Isolation,146,VREF(pin 146) <-> GND(pin 2),VREF_to_GND,resistance,>=10 kohm,10000,,Cross-rail isolation (unpowered): VREF to GND
+S2_PDN,2C_Power_Sequencing,142,VPP,VPP,sequencing,See notes,,,Must be established BEFORE VDD (JEDEC DDR4 requirement)
+S2_PDN,2C_Power_Sequencing,59,VDD,VDD,sequencing,See notes,,,Apply after VPP is stable
+S2_PDN,2C_Power_Sequencing,284,VDDSPD,VDDSPD,sequencing,See notes,,,Required for SPD EEPROM — verify present
+S3_SPD_Bus,3A_SPD_Supply,284,VDDSPD,VDDSPD,voltage,2.2-3.6 V,2.2,3.6,SPD EEPROM supply must be present before I2C read
+S3_SPD_Bus,3B_I2C_Bus,141,SCL,SPD_SCL,waveform,Open-drain with pull-up,,,"Scope: verify pull-up waveform, not floating. Rise time should be consistent with I2C spec."
+S3_SPD_Bus,3B_I2C_Bus,285,SDA,SPD_SDA,waveform,Open-drain with pull-up; ACK/NACK visible,,,Scope/logic analyzer: verify data transitions and ACK from EEPROM at address 0x50.
+S3_SPD_Bus,3C_Address,139,SA0,SA0,voltage,Logic LOW (tied to GND) or HIGH per design,,,SA pin determines EEPROM I2C address. Default 0x50 when SA0=SA1=SA2=0.
+S3_SPD_Bus,3C_Address,140,SA1,SA1,voltage,Logic LOW (tied to GND) or HIGH per design,,,SA pin determines EEPROM I2C address. Default 0x50 when SA0=SA1=SA2=0.
+S3_SPD_Bus,3C_Address,238,SA2,SA2,voltage,Logic LOW (tied to GND) or HIGH per design,,,SA pin determines EEPROM I2C address. Default 0x50 when SA0=SA1=SA2=0.
+S3_SPD_Bus,3D_SPD_Read,141,SCL,SPD_SCL,protocol,EEPROM responds with non-0xFF/non-0x00 data,,,Perform I2C read at address 0x50. Verify byte 2 (SPD revision) is a valid value. All-0xFF or all-0x00 indicates blank/missing EEPROM.

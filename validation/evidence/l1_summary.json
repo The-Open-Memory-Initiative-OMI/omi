@@ -1,0 +1,64 @@
+{
+  "tool": "l1_runner.py",
+  "version": "1.0.0",
+  "timestamp": "2026-03-07T10:36:56.426411+00:00",
+  "git_commit_sha": "d7353012e0933e62ad5f45de10181e43ac5dd40b",
+  "overall_status": "PASS",
+  "input_files": {
+    "reference_csv": "design\\connector\\ddr4_udimm_288_pinmap.csv",
+    "reference_csv_sha256": "5b30e30d37293d0ea1f65ad08f4a162f285a102fb0955541aa9b5fee47714c14",
+    "measurements_csv": "docs\\08_validation_and_review\\L1_bench_electrical\\measurement_log_template.csv",
+    "measurements_csv_sha256": "27c1ccfd60e391d8bd8586f4636bdbeaaca30e0949e35d63af6fbd19a2213480"
+  },
+  "sub_checks": {
+    "generate_probe_sequence": {
+      "exit_code": 0,
+      "status": "PASS",
+      "probe_csv": "validation\\evidence\\probe_sequence.csv",
+      "probe_checklist": "validation\\evidence\\probe_checklist.md"
+    },
+    "validate_continuity_log": {
+      "exit_code": 0,
+      "status": "PASS",
+      "report_file": "validation\\evidence\\continuity_report.json"
+    }
+  },
+  "evidence_files": [
+    {
+      "name": "continuity_report.json",
+      "sha256": "347bda448a1afd8ceec546b164ba2a5dc9b4d83804b8303a4c3e3bbee7fc9b3c"
+    },
+    {
+      "name": "l0_summary.json",
+      "sha256": "bcc64a4899952cf0561c537b12aa71308e3c8749edb93b92880ef7e8120061e4"
+    },
+    {
+      "name": "l0_summary.md",
+      "sha256": "94d4d103f7441b54b5f65bc81f2503e5350098aa0949a3d6ede62706d1b5e303"
+    },
+    {
+      "name": "lane_matrix.csv",
+      "sha256": "455f3ea799b749e850407a4fcdac7d9d1a8c056b6708f5515906198dbbe395fe"
+    },
+    {
+      "name": "naming_report.json",
+      "sha256": "8748380dbf069249ea4579e80e2f044fbd2a3486f395f21f137b79c4177fa44b"
+    },
+    {
+      "name": "pinmap_report.json",
+      "sha256": "35dc90b159bc2032b1f7f1f16fa9335f78ea0efbd6a5a64439dd808c6e375546"
+    },
+    {
+      "name": "probe_checklist.md",
+      "sha256": "0c7954406fe1bddce47dc0d0c9d827560e716d8e0e57b4b0383b456faf781428"
+    },
+    {
+      "name": "probe_sequence.csv",
+      "sha256": "4ee4e8f6bc371c00a7c916ddaaa290a2a54437437af81c76dc857d48ab6530f8"
+    },
+    {
+      "name": "README.md",
+      "sha256": "c454f21cdf7c802b4c8f39fe8a7491f29d3864959eaa939f35f06dadbf54ff18"
+    }
+  ]
+}
