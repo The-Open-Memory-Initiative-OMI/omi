@@ -1,12 +1,3 @@
-The Open Memory Initiative (OMI)
-Copyright (C) 2025 Mert Efe Şensoy
-
-OMI is a community-driven, documentation-first open hardware project
-aimed at making system memory understandable, reproducible, and
-buildable — starting with a reference-quality DDR4 UDIMM design.
-
-Software and scripts in this repository are licensed under:
-
 Apache License, Version 2.0
 
 =======================================================================
