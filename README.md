@@ -50,17 +50,25 @@ OMI is active and progressing deliberately. The OMI v1 target is a **reviewable 
   - 7.6 Interface Summary (frozen)
   - 7.7 Stage 7 Closure (frozen — quality gates passed, handoff to Stage 8)
 
+- **Stage 8 — Validation & Bring-Up Strategy — documentation complete:**
+  - Validation ladder (L0–L4) with pass/fail criteria and stop conditions
+  - Platform strategy: Class A/B/C taxonomy, specific board recommendations, phased approach
+  - Step-by-step bring-up procedure from bare PCB to OS boot
+  - Test point and DFT plan (17 test points, probe access requirements for layout)
+  - Success criteria, failure mode catalog (FS-01–FS-06), and diagnostic decision trees
+  - Pre-fabrication (26 items) and post-fabrication (17 items) review checklists
+  - Automated validation scripts (L0/L1 runners, pin map verifier, naming verifier)
+  - Stage 8 closure criteria defined; physical L1–L4 execution awaits fabricated hardware
+
 ### In Progress
 
-- **Stage 8 — Validation & Bring-Up Strategy**
-  - Validation platform selection
-  - Bring-up procedure definition
-  - Success criteria and failure mode documentation
-  - Review checklists and structured reporting templates
+- **Stage 9 — Minimal Reference Schematic** (correctness-first, one rank, no optimizations)
+  - Incorporates Stage 8 test point requirements into schematic and layout constraints
+  - Impedance and stackup constraints from platform strategy
+  - SPD content specification (hex image, EEPROM programming)
 
 ### Upcoming
 
-- **Stage 9** — Minimal Reference Schematic (correctness-first, one rank, no optimizations)
 - **Stage 10** — Layout & SI/PI Guidelines
 
 OMI prioritizes **structural correctness and reproducibility** over speed.
@@ -75,9 +83,10 @@ OMI is organized by engineering stages:
 docs/05_architecture_decisions/   ← Stage 5: what we build and why
 docs/06_block_decomposition/      ← Stage 6: power, CA/CLK, DQ/DQS, SPD, mechanical
 docs/07_schematic_capture/        ← Stage 7: schematic-level intent (frozen)
-docs/08_validation_and_review/    ← Stage 8: validation checklists and review
+docs/08_validation_and_review/    ← Stage 8: validation framework, procedures, checklists
 docs/v1/                          ← OMI v1 decision docs (form factor, capacity, etc.)
 design/connector/                 ← 288-pin UDIMM edge connector CSV mapping
+validation/runs/                  ← Validation run logs and evidence (populated post-fabrication)
 ```
 
 If you're new: start with the engineering method doc below, then skim Stage 5 decisions, then follow Stage 7 artifacts.
