@@ -196,8 +196,53 @@ Every validation pass produces:
 
 ---
 
+## Stage 8 Document Index
+
+### Foundational Reference Documents
+
+These define the validation framework — platform taxonomy, ladder levels, test categories, reporting format, and failure signatures.
+
+| Document | Purpose |
+|----------|---------|
+| [08-1_validation_platforms.md](./08-1_validation_platforms.md) | Platform class taxonomy (Class A/B/C), minimum requirements, evidence capabilities |
+| [08-2_bringup_ladder.md](./08-2_bringup_ladder.md) | Validation ladder (L0–L4) with pass/fail criteria and stop conditions |
+| [08-3_test_matrix.md](./08-3_test_matrix.md) | Test categories (T1–T7), minimum durations, failure taxonomy |
+| [08-4_reporting_template.md](./08-4_reporting_template.md) | Standardized validation report format, Run ID scheme, artifact naming |
+| [08-5_failure_signatures.md](./08-5_failure_signatures.md) | Six failure signatures (FS-01 through FS-06) with symptom-to-cause mappings |
+
+### Operational Documents
+
+These operationalize the framework — specific test points, platform recommendations, step-by-step procedures, consolidated criteria, checklists, and closure definitions.
+
+| Document | Purpose |
+|----------|---------|
+| [08_01_test_point_and_dft_plan.md](./08_01_test_point_and_dft_plan.md) | Test point locations, DFT philosophy, probe access requirements for layout |
+| [08_02_validation_platform_strategy.md](./08_02_validation_platform_strategy.md) | Specific platform recommendations, cost estimates, phased strategy, risk register |
+| [08_03_bringup_procedure.md](./08_03_bringup_procedure.md) | Step-by-step bring-up from bare PCB to OS boot |
+| [08_04_success_criteria_and_failure_modes.md](./08_04_success_criteria_and_failure_modes.md) | Consolidated success criteria, failure catalog, diagnostic decision trees, honest unknowns |
+| [08_05_review_checklists.md](./08_05_review_checklists.md) | Pre-fabrication (26 items) and post-fabrication (17 items) checklists, quick-report template |
+| [08_06_stage8_closure_criteria.md](./08_06_stage8_closure_criteria.md) | Stage 8 exit criteria, what's not required, handoff to Stage 9 |
+
+### Playbooks and Detailed Procedures
+
+| Document | Purpose |
+|----------|---------|
+| [OMI Stage 8 L0 Playbook Development.md](<./OMI Stage 8 L0 Playbook Development.md>) | Comprehensive L0 playbook with 5 execution sessions and risk register |
+| [OMI Stage 8 L1 Validation Guide.md](<./OMI Stage 8 L1 Validation Guide.md>) | Comprehensive L1 playbook with 3 bench sessions and equipment requirements |
+
+### Supporting Artifacts
+
+| Directory | Contents |
+|-----------|----------|
+| [L0_artifact_integrity/](./L0_artifact_integrity/) | L0 naming rules, README |
+| [L1_bench_electrical/](./L1_bench_electrical/) | L1 measurement procedures, probe sequence CSV, measurement log template |
+| [scripts/](./scripts/) | Automated validation scripts (l0_runner.py, l1_runner.py, verify_pinmap.py, etc.) |
+| [templates/](./templates/) | L0/L1 report templates, peer review checklists, PR templates |
+
+---
+
 ## Next
 
-Stage 8 continues into platform selection + bring-up reporting templates, then:
+Stage 8 closure criteria are defined in [08_06_stage8_closure_criteria.md](./08_06_stage8_closure_criteria.md). When all exit criteria are met:
 
 - Stage 9 — Minimal Reference Schematic (Correctness-First)
