@@ -44,8 +44,8 @@ Determinism: every UUID is derived with ``uuid.uuid5`` from a fixed namespace, s
 the generator twice on the same CSV produces byte-identical output (no timestamps, no RNG).
 
 Validation is layered: this script self-checks the in-memory model, the caller round-trips
-``omi.kicad_sym`` through ``kicad-cli sym upgrade`` + ``sym export svg``, and the ``verify``
-sub-command re-parses the emitted symbol and diffs every pin number+name against the CSV.
+``omi.kicad_sym`` through ``kicad-cli sym upgrade`` + ``sym export svg``, and the ``--verify``
+flag re-parses the emitted symbol and diffs every pin number+name against the CSV.
 """
 
 from __future__ import annotations
