@@ -46,9 +46,7 @@ spaces.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the project maintainer at **[GitHub Issues](https://github.com/The-Open-Memory-Initiative-OMI/omi/issues)** or by contacting the
-repository owner directly through GitHub.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported privately to the project maintainer at sensoymertefe@gmail.com . Please do not use public GitHub Issues for sensitive reports.
 
 All complaints will be reviewed and investigated promptly and fairly. The project
 team is obligated to maintain confidentiality with regard to the reporter of an
