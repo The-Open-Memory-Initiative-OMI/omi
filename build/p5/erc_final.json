@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-06-01T23:54:03+0300",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42",
+            "violations": []
+        },
+        {
+            "path": "/address-command-clock/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8",
+            "violations": []
+        },
+        {
+            "path": "/data-byte-lanes-dqs/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/a876beee-cefa-449d-aa5c-f6d2865bd67f",
+            "violations": []
+        },
+        {
+            "path": "/spd-and-configuration/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/32845847-1fe2-4b3a-b24a-3fdd7e5b4214",
+            "violations": []
+        },
+        {
+            "path": "/udimm-edge-interface/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/9986c6c0-2ac4-474e-a00a-d8203c8bf46f",
+            "violations": []
+        }
+    ],
+    "source": "omi_v1_power.kicad_sch"
+}
