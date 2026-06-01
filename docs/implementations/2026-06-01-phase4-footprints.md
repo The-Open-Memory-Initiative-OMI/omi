@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-01
 **Branch:** `phase4-footprints` (based on `phase3-integration`, the P3-bearing base)
-**Status:** in progress — plan documented before edits per the documentation-first rule.
+**Status:** complete — J1 footprint generated + assigned; all real components footprinted; ERC unchanged at 85; PR open (not merged).
 **Tooling:** `kicad-cli` 9.0.8 (KiCad 9.0, format `20250114`); `powershell.exe`.
 
 ---
@@ -79,7 +79,27 @@ Untouched: `omi.kicad_sym` + `tools/edge_symbol/**` (frozen), the CSV, `validati
 
 ## 6. Verification
 
-_(Filled in during execution — pad-count/CSV-match, SVG render, netlist coverage, ERC = 85.)_
+**DRAM + SPD (confirm-only, no change):**
+- U_DRAM0–7 = `Package_BGA:FBGA-78_7.5x11mm_Layout2x3x13_P0.8mm` — resolves; 78 ball-designator
+  pads = 78 symbol pins (clean 1:1, verified against footprint + symbol + netlist); correct
+  JEDEC DDR4-×8 78-ball FBGA.
+- U_SPD0 = `Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm` — resolves; pads 1–8 + EP "9";
+  symbol pin 9 = EP→GND; `-MAHM` = UDFN-8 2×3mm (8MA2) → correct land pattern.
+
+**J1 (generated):**
+- `gen_edge_footprint.py --verify` → **288 pads, numbers 1..288 == CSV pins, 144 F.Cu / 144 B.Cu.**
+- `kicad-cli fp upgrade` → exit 0, *"library was not updated"* (output already canonical KiCad-9).
+- `kicad-cli fp export svg` → exit 0, rendered `DDR4_UDIMM_288_Edge.svg` (104 KB).
+- `fp-lib-table` registers nickname `omi` → `${KIPRJMOD}/omi.pretty`.
+- J1 instance Footprint property set to `omi:DDR4_UDIMM_288_Edge` (1-line edit on the edge sheet;
+  `omi.kicad_sym` + `tools/edge_symbol/**` untouched).
+
+**Whole-design (kicad-cli on the root):**
+- Netlist footprint coverage: **10/10 real components** carry a resolvable footprint (J1,
+  U_DRAM0–7, U_SPD0); power symbols are not in the component list (carry none — correct).
+- **J1 pad↔pin:** footprint pads {1..288} == symbol pins {1..288} (sets exactly equal).
+- **ERC = 85, unchanged** (footprints don't affect ERC; the residual is P5's).
+- Symbol invariant intact: J1 still 288 pins; `omi.kicad_sym` byte-unchanged.
 
 ## 7. Remaining (handoff)
 
