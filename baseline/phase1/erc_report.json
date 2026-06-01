@@ -1,0 +1,2008 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-06-01T11:24:13+0300",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42",
+            "violations": [
+                {
+                    "description": "Label not connected to anything",
+                    "items": [
+                        {
+                            "description": "Label 'VDDQ'",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.9779
+                            },
+                            "uuid": "2a96067d-6376-4522-a5ee-7f4bf4137123"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Label not connected to anything",
+                    "items": [
+                        {
+                            "description": "Label 'VREF'",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 1.0287
+                            },
+                            "uuid": "16ec7989-7ee3-4d37-ae9a-e6cf697d31a1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "label_dangling"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR06 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.7145,
+                                "y": 1.0541
+                            },
+                            "uuid": "9e12a576-04ca-4915-9d8b-5319bca49982"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/address-command-clock/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 40 [Pin_40, Passive, Line]",
+                            "pos": {
+                                "x": 0.3175,
+                                "y": 0.2921
+                            },
+                            "uuid": "ec99780c-b05f-48ce-87d7-40f5f6fca7c0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 39 [Pin_39, Passive, Line]",
+                            "pos": {
+                                "x": 0.3429,
+                                "y": 0.2921
+                            },
+                            "uuid": "a43275fd-8438-4615-bab3-49cd2f3c0453"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 38 [Pin_38, Passive, Line]",
+                            "pos": {
+                                "x": 0.3683,
+                                "y": 0.2921
+                            },
+                            "uuid": "44f1c35e-3db6-4e09-94f3-a1d3d18b418e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 37 [Pin_37, Passive, Line]",
+                            "pos": {
+                                "x": 0.3937,
+                                "y": 0.2921
+                            },
+                            "uuid": "6eb1d921-df94-4a9b-8645-c94d1976a4e2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 36 [Pin_36, Passive, Line]",
+                            "pos": {
+                                "x": 0.4191,
+                                "y": 0.2921
+                            },
+                            "uuid": "1f63514e-5920-4f93-83d2-3acaa34b72f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 35 [Pin_35, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.2921
+                            },
+                            "uuid": "ab2c88dd-5f32-4f07-83e0-999e687d3fbd"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 34 [Pin_34, Passive, Line]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": 0.2921
+                            },
+                            "uuid": "724f180f-8aa1-4949-9c4e-64378a50d251"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 33 [Pin_33, Passive, Line]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 0.2921
+                            },
+                            "uuid": "40875ead-7349-4129-a6ab-708399e802ba"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 32 [Pin_32, Passive, Line]",
+                            "pos": {
+                                "x": 0.5207,
+                                "y": 0.2921
+                            },
+                            "uuid": "74d52cb4-f65b-4520-913c-9591e1c76527"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 31 [Pin_31, Passive, Line]",
+                            "pos": {
+                                "x": 0.5461,
+                                "y": 0.2921
+                            },
+                            "uuid": "df4e87e2-b473-4cc4-8c79-07cbc544e16e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST Pin 30 [Pin_30, Passive, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.2921
+                            },
+                            "uuid": "2d99fa79-0f48-4743-885d-0c6b728563bc"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin B2 [VDDQ, Power input, Line]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.5588
+                            },
+                            "uuid": "e004a7e8-f483-4f81-bfca-156a0d28e052"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.6731,
+                                "y": 0.5588
+                            },
+                            "uuid": "7609cb26-0ddb-447b-b214-73dad484eadb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.143
+                            },
+                            "uuid": "699d6b40-244f-409f-b9ca-63d11e971943"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.143
+                            },
+                            "uuid": "699d6b40-244f-409f-b9ca-63d11e971943"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 1.016
+                            },
+                            "uuid": "f63858d9-9539-4a47-ae73-87bf0ecfad8e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.2192
+                            },
+                            "uuid": "93a5def1-5f70-44fc-bfdc-f6f7d2697da1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.27
+                            },
+                            "uuid": "f3eb115d-be3a-4f80-993e-7fd96f17a7ae"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 1.1176
+                            },
+                            "uuid": "de131f7a-3ac5-4676-ad29-e335f74e959e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.3208
+                            },
+                            "uuid": "27c1acbc-1600-4230-ae3c-e83e8d73a8c6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 1.1684
+                            },
+                            "uuid": "74a294e3-8c99-4077-95a0-b9c69db7187c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.3081,
+                                "y": 0.5588
+                            },
+                            "uuid": "6fcddeff-a6b1-404c-ad09-9144155ec69b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.4478
+                            },
+                            "uuid": "6f82eaef-257d-4e4c-8646-ef8bdf4b47f5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM0 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 1.4478
+                            },
+                            "uuid": "6f82eaef-257d-4e4c-8646-ef8bdf4b47f5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.143
+                            },
+                            "uuid": "b22e637b-7fbd-43c7-b461-2501e5ee0e9e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.143
+                            },
+                            "uuid": "b22e637b-7fbd-43c7-b461-2501e5ee0e9e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.2192
+                            },
+                            "uuid": "8e8e627e-906d-4450-af36-aecf2ba2370c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.27
+                            },
+                            "uuid": "e3954e43-208e-48af-9b84-01eb5075cbf7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.3208
+                            },
+                            "uuid": "48f7aed5-bc38-4967-8f54-5762e9ea0953"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 1.016
+                            },
+                            "uuid": "79ae5450-15ac-4e88-b219-a0b0f5b5fb61"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.4478
+                            },
+                            "uuid": "e627e74b-0654-45de-b1fa-bca5f0a46671"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 1.4478
+                            },
+                            "uuid": "e627e74b-0654-45de-b1fa-bca5f0a46671"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 1.1176
+                            },
+                            "uuid": "7765cd47-4242-4574-9c60-fc80b85ba7aa"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM1 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 1.1684
+                            },
+                            "uuid": "2c1b990f-ca65-4f6a-bff7-1ab27a755fd2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.143
+                            },
+                            "uuid": "2b64316a-b39b-43d8-bb12-56ed7066ceb3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.143
+                            },
+                            "uuid": "2b64316a-b39b-43d8-bb12-56ed7066ceb3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.2192
+                            },
+                            "uuid": "7e3dd967-9c71-45db-b758-c5f6dad9e98d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.27
+                            },
+                            "uuid": "eb5fcd9e-a0a0-4c0c-a30e-aac444fbd0f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.3208
+                            },
+                            "uuid": "b95eb146-be52-4a62-b120-f6081e272691"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 2.2098
+                            },
+                            "uuid": "be56e307-f7a1-45e0-a1fd-0cf88780c5b8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.3368
+                            },
+                            "uuid": "6c227da1-41ee-4c7e-bbfb-85e8d7f99130"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.3368
+                            },
+                            "uuid": "6c227da1-41ee-4c7e-bbfb-85e8d7f99130"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.4478
+                            },
+                            "uuid": "cfb16353-0356-4bab-8094-fde6bef3a424"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 1.4478
+                            },
+                            "uuid": "cfb16353-0356-4bab-8094-fde6bef3a424"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 2.3114
+                            },
+                            "uuid": "58a23198-61b5-44cd-9238-95c71395d0a5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.413
+                            },
+                            "uuid": "8dde2ed8-09c4-4ccb-b207-a898990ae1e4"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 1.016
+                            },
+                            "uuid": "c91b3897-9aaa-4fcc-9640-046c6c650f3f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 0.8001,
+                                "y": 2.3622
+                            },
+                            "uuid": "07656b85-4c74-4985-a9c7-3e3844e8cca5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.4638
+                            },
+                            "uuid": "084ce1cd-897e-4d06-b7b4-c23aabd62d74"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 1.1176
+                            },
+                            "uuid": "7c3ffc68-a9cf-436d-80f2-df48251d713f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM2 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 1.1684
+                            },
+                            "uuid": "fcd6a3e2-ab27-41b9-b4b0-b57a444ce576"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.5146
+                            },
+                            "uuid": "a8294eaa-84f7-4a29-a72b-bc9cf410794e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.3368
+                            },
+                            "uuid": "ac147bd7-b963-4538-b813-98d0b42acf9a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.3368
+                            },
+                            "uuid": "ac147bd7-b963-4538-b813-98d0b42acf9a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.6416
+                            },
+                            "uuid": "d2efea68-d737-4911-8d90-7869c364f756"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM5 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 2.6416
+                            },
+                            "uuid": "d2efea68-d737-4911-8d90-7869c364f756"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.413
+                            },
+                            "uuid": "bf2b8aa8-3f02-49bc-ad31-f81c1e819249"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 2.2098
+                            },
+                            "uuid": "eb05f2a8-c889-4c4a-8d4d-66ee959c7de6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.4638
+                            },
+                            "uuid": "db110a13-e3ad-4125-8449-c29ccdadc21a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 2.3114
+                            },
+                            "uuid": "a9280856-4c8b-42f8-a27e-790dce17c3a9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.5146
+                            },
+                            "uuid": "6d87dc24-557d-4aa8-81f5-c98fdc65d17b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 1.5367,
+                                "y": 2.3622
+                            },
+                            "uuid": "b4391efd-ba07-4609-b6cd-46f289c9990c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.143
+                            },
+                            "uuid": "a2f9741f-0022-4cdd-9391-f0f56218ce37"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.143
+                            },
+                            "uuid": "a2f9741f-0022-4cdd-9391-f0f56218ce37"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.2192
+                            },
+                            "uuid": "c00647dc-7cab-4d45-8e82-9f87bde9dc2e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.27
+                            },
+                            "uuid": "1c3a73b2-6949-4d12-bfc6-daff831e0a3f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.6416
+                            },
+                            "uuid": "f0373fb8-4073-49ee-89cb-8e5c8a41e220"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM6 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 2.6416
+                            },
+                            "uuid": "f0373fb8-4073-49ee-89cb-8e5c8a41e220"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.3208
+                            },
+                            "uuid": "1e41b328-6d08-4bdf-9cb7-0c79a670ec9d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.4478
+                            },
+                            "uuid": "729c859f-f01b-4817-bd05-05ef53e63afe"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 2.5908,
+                                "y": 1.4478
+                            },
+                            "uuid": "729c859f-f01b-4817-bd05-05ef53e63afe"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.3495
+                            },
+                            "uuid": "3cc97fde-139a-49c1-b229-2ba24bdbd219"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.3495
+                            },
+                            "uuid": "3cc97fde-139a-49c1-b229-2ba24bdbd219"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.4257
+                            },
+                            "uuid": "d9e7e723-98c1-4d64-8a59-d4795ddbb44d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 1.016
+                            },
+                            "uuid": "56ab444b-4862-4b14-b108-651559e2392b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.4765
+                            },
+                            "uuid": "9d2cfaf8-c812-43c5-8b38-7ca8bf1925f2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 1.1176
+                            },
+                            "uuid": "3789775e-4726-4881-a845-bb6ab0a4282a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.5273
+                            },
+                            "uuid": "fc59fe12-73ba-4901-b46d-34fa465ec344"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 2.2225
+                            },
+                            "uuid": "31a1f583-11f6-4b12-a405-d8818dec3294"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM3 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 2.9464,
+                                "y": 1.1684
+                            },
+                            "uuid": "62777dd5-5b14-4857-82de-eb02ec22f33d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 2.3241
+                            },
+                            "uuid": "5c1b8638-d317-4bc2-953f-8c9cd6bef25c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.6543
+                            },
+                            "uuid": "c81c7026-137b-48a0-9ca4-235beb6c5f80"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 1.8923,
+                                "y": 2.6543
+                            },
+                            "uuid": "c81c7026-137b-48a0-9ca4-235beb6c5f80"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM7 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 2.2479,
+                                "y": 2.3749
+                            },
+                            "uuid": "7028db3a-dada-4f66-a864-1fd61f1d1101"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.1557
+                            },
+                            "uuid": "d3ac4354-1804-42be-8a43-502a872f8ffb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin N3 [PAR, Input, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.1557
+                            },
+                            "uuid": "d3ac4354-1804-42be-8a43-502a872f8ffb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin F2 [NC/C2/ODT1, Passive, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.2319
+                            },
+                            "uuid": "6f19ed76-5b5a-4afe-b9fd-3b2222465e8a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin G8 [NC/C1/~{CS1}, Passive, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.2827
+                            },
+                            "uuid": "fe00cf1f-84da-46d5-8550-e871f7af0636"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin G2 [NC/C0/CKE1, Passive, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.3335
+                            },
+                            "uuid": "7b684da7-8fe7-4c77-8992-7afc56412797"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.4605
+                            },
+                            "uuid": "7c896cd0-bd7e-4618-bca9-c0060348c024"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin G9 [TEN, Input, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 1.4605
+                            },
+                            "uuid": "7c896cd0-bd7e-4618-bca9-c0060348c024"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin A3 [TDQS_c, Output, Line]",
+                            "pos": {
+                                "x": 3.6449,
+                                "y": 1.0287
+                            },
+                            "uuid": "811745f0-7daf-45d2-aeb4-19ce389c8a20"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin B9 [ZQ, Passive, Line]",
+                            "pos": {
+                                "x": 3.6449,
+                                "y": 1.1303
+                            },
+                            "uuid": "b42e7ed2-a46c-422d-8ba6-f07289a81c52"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U_DRAM4 Pin L9 [~{ALERT}, Open collector, Line]",
+                            "pos": {
+                                "x": 3.6449,
+                                "y": 1.1811
+                            },
+                            "uuid": "9de4b743-7355-477e-a11e-fadc3f2db4ea"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/data-byte-lanes-dqs/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/a876beee-cefa-449d-aa5c-f6d2865bd67f",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 34 [Pin_34, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.3843
+                            },
+                            "uuid": "66294ae9-81ff-4c90-9261-17315b356aba"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 35 [Pin_35, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.4097
+                            },
+                            "uuid": "d128d8a8-0cd5-4f6a-a678-eb184bc8c700"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 36 [Pin_36, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.4351
+                            },
+                            "uuid": "9b4b8aa3-53ac-4c6a-aeab-c47c971b9226"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 37 [Pin_37, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.4605
+                            },
+                            "uuid": "4e95ddf2-7d46-4974-afd0-69917f188e22"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 38 [Pin_38, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.4859
+                            },
+                            "uuid": "3d07da7e-0757-4f96-afe1-9049c6b7cf90"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 39 [Pin_39, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.5113
+                            },
+                            "uuid": "e140c946-78f7-4555-bb45-052b6591a7c8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_A Pin 40 [Pin_40, Passive, Line]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.5367
+                            },
+                            "uuid": "1c35c63b-272c-4b1b-8d94-d749a86457f5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 34 [Pin_34, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.3843
+                            },
+                            "uuid": "f16dba6a-f9c3-4f94-8c44-698b8c3c93eb"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 35 [Pin_35, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.4097
+                            },
+                            "uuid": "5496ec11-521a-434e-820e-5af1e7f8050c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 36 [Pin_36, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.4351
+                            },
+                            "uuid": "7c248468-0092-4d44-a3fa-b3f41298fa58"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 37 [Pin_37, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.4605
+                            },
+                            "uuid": "cabf9708-b14e-4503-aa05-e4df31640194"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 38 [Pin_38, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.4859
+                            },
+                            "uuid": "f86d591b-794e-4ed7-900e-05e02d25fc7c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 39 [Pin_39, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.5113
+                            },
+                            "uuid": "42227275-848b-4acb-9e92-07102f2dc31b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_B Pin 40 [Pin_40, Passive, Line]",
+                            "pos": {
+                                "x": 1.0922,
+                                "y": 1.5367
+                            },
+                            "uuid": "a9045e00-6daf-487a-a3b6-86e4e90a0569"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 23 [Pin_23, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.1049
+                            },
+                            "uuid": "f7fbcbed-4288-40cb-a2de-5aedd1f0a7e9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 24 [Pin_24, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.1303
+                            },
+                            "uuid": "6c6d3764-7fb4-4e90-8558-e0afc668a52b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 25 [Pin_25, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.1557
+                            },
+                            "uuid": "42e6e3bf-d3b8-4b94-85ec-c40d594c796b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 26 [Pin_26, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.1811
+                            },
+                            "uuid": "a442a40c-d186-48f5-ad5e-f85ac334f052"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 27 [Pin_27, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.2065
+                            },
+                            "uuid": "25267d82-f6c7-4406-80e6-db19740d7ac6"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 28 [Pin_28, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.2319
+                            },
+                            "uuid": "38f75f15-bf77-4069-89bb-257397e296f0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 29 [Pin_29, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.2573
+                            },
+                            "uuid": "a81e9cc4-4d9f-4529-b04c-df731bf68fd1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 30 [Pin_30, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.2827
+                            },
+                            "uuid": "724d2fa6-c372-408c-b6d1-d2074a6a2652"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 31 [Pin_31, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.3081
+                            },
+                            "uuid": "f19ab0f6-3a5a-4daa-a9f2-4d6ce6e0283c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 32 [Pin_32, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.3335
+                            },
+                            "uuid": "fa2228f0-44bc-4145-829f-f86e5d21cf36"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 33 [Pin_33, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.3589
+                            },
+                            "uuid": "b7832b0d-f0b5-4107-8cbc-bc5e45dd3988"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 34 [Pin_34, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.3843
+                            },
+                            "uuid": "1fc21a30-fe69-4193-ad96-0c9a99e8e48f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 35 [Pin_35, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.4097
+                            },
+                            "uuid": "d862ee92-c17f-4f7d-930f-c31e66095b9e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 36 [Pin_36, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.4351
+                            },
+                            "uuid": "e8ae06b3-7260-42be-bea0-51b2378c5d6a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 37 [Pin_37, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.4605
+                            },
+                            "uuid": "d5c86a57-fca2-4d09-9801-2cbf923eb8fe"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 38 [Pin_38, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.4859
+                            },
+                            "uuid": "b10efa9b-9842-42e3-9f50-9b10f3b6871a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 39 [Pin_39, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.5113
+                            },
+                            "uuid": "772a78f2-cfa0-42ed-84b6-f3571efe8cb0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_DQ_C Pin 40 [Pin_40, Passive, Line]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.5367
+                            },
+                            "uuid": "22a9a405-8a2b-4597-a262-bcb98f277d37"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/spd-and-configuration/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/32845847-1fe2-4b3a-b24a-3fdd7e5b4214",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol J_HOST_SPD Pin 8 [Pin_8, Passive, Line]",
+                            "pos": {
+                                "x": 0.8128,
+                                "y": 1.0922
+                            },
+                            "uuid": "8cb9ab8f-ee16-4ef6-92e2-a0d982891573"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U_SPD0 Pin 8 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": 0.889
+                            },
+                            "uuid": "3df7cbb9-649b-4c3b-827b-5c5fa81898dc"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/udimm-edge-interface/",
+            "uuid_path": "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/9986c6c0-2ac4-474e-a00a-d8203c8bf46f",
+            "violations": []
+        }
+    ],
+    "source": "omi_v1_power.kicad_sch"
+}
