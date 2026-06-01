@@ -48,9 +48,9 @@ Source: `erc_report.json` (`sch erc --severity-all`).
 
 | Violation type | Count |
 |---|---|
-| `pin_not_connected` | 98 |
-| `pin_not_driven` | 18 |
-| `power_pin_not_driven` | 13 |
+| `pin_not_connected` | 108 |
+| `pin_not_driven` | 16 |
+| `power_pin_not_driven` | 5 |
 | `label_dangling` | 2 |
 | **Total** | **131** |
 
@@ -58,19 +58,19 @@ Source: `erc_report.json` (`sch erc --severity-all`).
 
 | Sheet | Violations |
 |---|---|
-| `/address-command-clock/` | 100 |
-| `/data-byte-lanes-dqs/` | 28 |
+| `/address-command-clock/` | 94 |
+| `/data-byte-lanes-dqs/` | 32 |
 | `/spd-and-configuration/` | 2 |
-| `/` (root power) | 1 |
+| `/` (root power) | 3 |
 | `/udimm-edge-interface/` | 0 |
 | **Total** | **131** |
 
-**Structural reading:** 88% of violations are *unconnected* or *not-driven* pins (116/131),
-concentrated where the design meets the (not-yet-real) host interface — DRAM control/data pins and the
-placeholder host connectors. 13 `power_pin_not_driven` (e.g. `U_DRAM* VDDQ`, isolated `#PWR` symbols)
-and 2 dangling labels on the root sheet (`VDDQ`, `VREF`). The report marks the violations at
-error-severity; deciding which are true errors vs. acceptable-by-design warnings is **P5** work, not a
-Phase-1 judgement.
+**Structural reading:** 95% of violations are *unconnected* or *not-driven* pins (124/131) —
+`pin_not_connected` alone is 108 (82%) — concentrated where the design meets the (not-yet-real) host
+interface: DRAM control/data pins and the placeholder host connectors. 5 `power_pin_not_driven`
+(e.g. `U_DRAM* VDDQ`, isolated `#PWR` symbols) and 2 dangling labels on the root sheet (`VDDQ`,
+`VREF`). All 131 are reported at error-severity; deciding which are true errors vs.
+acceptable-by-design warnings is **P5** work, not a Phase-1 judgement.
 
 ---
 
@@ -110,10 +110,10 @@ Source: `omi_net` column of `design/connector/ddr4_udimm_288_pinmap.csv` vs. net
 
 | Metric | Value |
 |---|---|
-| Pinmap rows / unique `omi_net` | 288 / 163 (123 signal + 35 power + 5 NC) |
+| Pinmap rows / unique `omi_net` names | 288 / **130** |
 | Netlist nets | 238 |
-| Intended **signal-net names present verbatim** in the netlist | **121 / 123 (98.4%)** |
-| Intended signal nets absent | 2 — `ALERT_n`, `PARITY` (PARITY marked "not enabled in v1" in the CSV) |
+| Intended `omi_net` names **present verbatim** in the netlist | **125 / 130 (96.2%)** |
+| Intended names absent | **5** — `ALERT_n`, `PARITY`, `NC`, `VREF`, `VTT` |
 
 **Interpretation (important — corrects an over-optimistic first read):** the high match is a
 **naming-discipline** result, **not** a completeness result. The intended edge net *names*
@@ -121,7 +121,9 @@ Source: `omi_net` column of `design/connector/ddr4_udimm_288_pinmap.csv` vs. net
 data / CA-CLK sheets — but they terminate at **placeholder host connectors**, not a real 288-pin UDIMM
 edge symbol (which does not exist yet; see §5). Net *names* aligning with the pinmap ≠ a built edge
 interface; the 131 ERC unconnected/undriven pins and the empty edge sheet show the interface is
-**unbuilt**. Binding these names to the 288 physical edge pins is **P2/P3**.
+**unbuilt**. Binding these names to the 288 physical edge pins is **P2/P3**. The 5 absent names are the
+no-connect pseudo-net (`NC`), two rails not yet instantiated (`VREF`, `VTT`), and two controls
+(`ALERT_n`; `PARITY` is disabled by design in v1).
 
 ---
 
@@ -136,15 +138,15 @@ interface; the 131 ERC unconnected/undriven pins and the empty edge sheet show t
 | 5 | **All 8 DRAM sit on the address-command-clock sheet**, not the data sheet | netlist `<sheetpath>` = `/address-command-clock/` for every `U_DRAM*` | P3 *(note / possible reorg)* |
 | 6 | **`schematic has annotation errors`** warning on netlist/BOM export | `_console_log.txt`; **not** a `?`-ref (0 across all sheets) and **not** an instance-ref duplicate (15 unique) — subtler (power-symbol / cross-sheet) trigger | P3 / P5 *(investigate; did not block export)* |
 | 7 | **Footprints: 6 of 15 unassigned** — and they are exactly the placeholder connectors | netlist footprint field: 9/15 populated (8 DRAM `FBGA-78` + SPD) | P4 *(smaller than expected — DRAM/SPD already footprinted)* |
-| 8 | **131 ERC violations** (98 not-connected, 18 not-driven, 13 power-not-driven, 2 dangling) | `erc_report.json` tally | P5 |
-| 9 | **2 intended edge nets absent** (`ALERT_n`, `PARITY`) | pinmap vs. netlist; PARITY disabled by design in v1 | P3 *(PARITY = by design)* |
+| 8 | **131 ERC violations** (108 not-connected, 16 not-driven, 5 power-not-driven, 2 dangling) | `erc_report.json` tally | P5 |
+| 9 | **5 intended `omi_net` names absent** (`ALERT_n`, `PARITY`, `NC`, `VREF`, `VTT`) | pinmap vs. netlist (125/130 present) | P3 *(NC pseudo-net + PARITY by design; VREF/VTT = reference/termination rails)* |
 | 10 | **No missing symbol/footprint libraries; no project lib tables** | netlist `libsource` = standard libs only; no `sym-/fp-lib-table` | — *(clean; no action)* |
 
 **Headline corrections to the prior audit's assumptions** (the value of measuring):
 - The **9-DRAM anomaly is refuted** at both the netlist and schematic-source level — there are exactly **8**.
 - **Footprints are mostly assigned** (9/15), not ~0 — only the placeholder connectors lack them.
-- The schematic's **net naming is ~98% aligned** with the intended edge pinmap already; the real gap is
-  the **missing physical 288-pin edge connector**, not the net names.
+- The schematic's **net naming is ~96% aligned** with the intended edge pinmap already (125/130); the
+  real gap is the **missing physical 288-pin edge connector**, not the net names.
 
 ---
 
