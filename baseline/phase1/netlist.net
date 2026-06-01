@@ -1,6 +1,6 @@
 (export (version "E")
   (design
-    (source "C:\\Users\\senso\\OneDrive\\Masaüstü\\CVWebpage\\omi-project\\design\\power\\omi_v1_power\\omi_v1_power.kicad_sch")
+    (source "design/power/omi_v1_power/omi_v1_power.kicad_sch")
     (date "2026-06-01T11:24:15+0300")
     (tool "Eeschema 9.0.8")
     (sheet (number "1") (name "/") (tstamps "/")
