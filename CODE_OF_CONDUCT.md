@@ -4,7 +4,7 @@
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in the
-Open Memory Initiative (OMI) community a harassment-free experience for everyone, regardless of age, body
+the Open Memory Initiative (OMI) community a harassment-free experience for everyone, regardless of age, body
 size, visible or invisible disability, ethnicity, sex characteristics, gender
 identity and expression, level of experience, education, socio-economic status,
 nationality, personal appearance, race, caste, color, religion, or sexual
