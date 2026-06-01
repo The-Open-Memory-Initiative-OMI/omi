@@ -182,7 +182,7 @@ Each license maps to a specific part of the repository:
 |---|---|---|---|
 | Hardware design | `design/**` — schematics, PCB layouts, connector data, design artifacts | CERN Open Hardware Licence v2 — Strongly Reciprocal (CERN-OHL-S-2.0) | [`LICENSE`](LICENSE) |
 | Documentation | `docs/**` and the root prose docs — charter, scope, methodology, learning materials | Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) | [`LICENSE-docs`](LICENSE-docs) |
-| Software / code | Validation scripts, test tooling, automation | Apache License 2.0 | [`LICENSE-software`](LICENSE-software) |
+| Software / code | `docs/08_validation_and_review/scripts/**` — validation scripts, test tooling, automation | Apache License 2.0 | [`LICENSE-software`](LICENSE-software) |
 
 All contributions must comply with these licenses and with the openness and
 redistribution principles defined in [CHARTER.md](CHARTER.md).
