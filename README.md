@@ -122,6 +122,7 @@ Before contributing, please read:
 - 📄 **[START_HERE.md](./START_HERE.md)** — onboarding, tracks, and starter tasks
 - 📄 **[CHARTER.md](./CHARTER.md)** — purpose, scope, governance
 - 📄 **[CONTRIBUTING.md](./CONTRIBUTING.md)** — how to participate and what is expected
+- 📄 **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)** — the conduct expected of everyone who participates
 
 Good ways to engage:
 
