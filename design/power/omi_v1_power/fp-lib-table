@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "omi")(type "KiCad")(uri "${KIPRJMOD}/omi.pretty")(options "")(descr "OMI v1 generated project footprints (Phase 4: 288-pin DDR4 UDIMM card-edge; nominal geometry, see footprint descr caveat)"))
+)

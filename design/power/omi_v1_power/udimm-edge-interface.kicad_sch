@@ -10789,7 +10789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "omi:DDR4_UDIMM_288_Edge"
 			(at 152.4 190.5 0)
 			(effects
 				(font
