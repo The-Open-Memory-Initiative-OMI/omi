@@ -6817,35 +6817,68 @@
 		)
 		(uuid "43b9d85d-d0d1-4467-9ab1-ed28cb16e917")
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 82.55 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "4b6c70a9-0dea-46d4-8bc0-8bb3f8d31a82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 82.55 228.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "602734c9-d1d4-4afc-b9c5-1320848a0805")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.55 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 297.18 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "61cf4521-9ece-40bb-bb28-0e287f587322")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(label "VDDQ"
 		(at 346.71 50.8 270)
@@ -6877,15 +6910,26 @@
 		)
 		(uuid "941517c1-45e2-4529-880d-edfb2f8eec44")
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 227.33 229.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "a52a1c57-de0a-453c-ade6-199d7b05bea3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.33 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(label "VDDQ"
 		(at 276.86 49.53 270)
@@ -6897,15 +6941,26 @@
 		)
 		(uuid "affe1b2f-f283-400e-8724-12e15a8fa418")
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 156.21 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "b923c8f9-a364-4e77-b9fa-d149a14428c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(label "VDDQ"
 		(at 62.23 168.91 270)
@@ -6917,15 +6972,26 @@
 		)
 		(uuid "c12d1e86-5f67-4a38-90e1-1e84d97f20fa")
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 367.03 110.49 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "c55e232e-916a-4e48-ac80-262d4e77c81a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.03 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(label "VDDQ"
 		(at 62.23 49.53 270)
@@ -6937,25 +7003,47 @@
 		)
 		(uuid "d0650496-174e-4262-ab65-404316d99d34")
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 156.21 228.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "d7883c3c-16d3-4242-858e-76d9e758670c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.21 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(label "VREF"
+	(global_label "VREF"
+		(shape input)
 		(at 227.33 109.22 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "e03d11e8-f082-4505-9fed-df32c761fcf6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.33 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
 	(label "VDDQ"
 		(at 207.01 170.18 270)
