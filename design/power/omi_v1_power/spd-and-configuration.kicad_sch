@@ -584,36 +584,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 96.52) (xy 81.28 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b22c13-dbf0-45f0-b0af-989e1f2551e6")
-	)
-	(wire
-		(pts
-			(xy 73.66 104.14) (xy 81.28 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46c5f1a1-b260-4ffa-bfe2-ca5234a6e2bf")
-	)
-	(wire
-		(pts
-			(xy 73.66 91.44) (xy 81.28 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "529ef842-115a-4188-a33c-d1cb85104e94")
-	)
-	(wire
-		(pts
 			(xy 153.67 96.52) (xy 158.75 96.52)
 		)
 		(stroke
@@ -644,26 +614,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 99.06) (xy 81.28 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "912445fa-9f7c-4945-8ec4-38446728975a")
-	)
-	(wire
-		(pts
-			(xy 73.66 106.68) (xy 81.28 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9306ec75-ecdb-456b-b4ae-96d8058d17c0")
-	)
-	(wire
-		(pts
 			(xy 153.67 93.98) (xy 158.75 93.98)
 		)
 		(stroke
@@ -674,16 +624,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 93.98) (xy 81.28 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b79b575b-c550-4baf-9405-981abed461e2")
-	)
-	(wire
-		(pts
 			(xy 179.07 96.52) (xy 184.15 96.52)
 		)
 		(stroke
@@ -691,16 +631,6 @@
 			(type default)
 		)
 		(uuid "c4ff3edb-936a-4a01-8fae-b5e23e503535")
-	)
-	(wire
-		(pts
-			(xy 73.66 101.6) (xy 81.28 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2c36f20-12ef-4733-8173-ebcb267c6eb3")
 	)
 	(wire
 		(pts
@@ -722,28 +652,6 @@
 		)
 		(uuid "f97e7da6-9398-499d-86f4-0b30c7a084f1")
 	)
-	(global_label "GND"
-		(shape input)
-		(at 73.66 93.98 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0965c5d4-a3d3-470a-8f0f-52665d857d00")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.8043 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VDDSPD"
 		(shape input)
 		(at 168.91 83.82 180)
@@ -757,28 +665,6 @@
 		(uuid "0ec8d3e7-def6-4e11-893e-d11e9195ef15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 158.5467 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPD_SCL"
-		(shape input)
-		(at 73.66 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "14591a40-f3fc-4b38-a827-7eac16adf53d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.4501 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -810,28 +696,6 @@
 			)
 		)
 	)
-	(global_label "VDDSPD"
-		(shape input)
-		(at 73.66 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "259648b5-a1d7-484f-acf3-d726ec7fcf34")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.2967 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SPD_SCL"
 		(shape input)
 		(at 184.15 96.52 0)
@@ -850,28 +714,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPD_SDA"
-		(shape input)
-		(at 73.66 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2feac37d-825e-4d39-93f8-22e2ceea3db1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.3896 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -983,160 +825,6 @@
 				)
 				(justify right)
 				(hide yes)
-			)
-		)
-	)
-	(global_label "SA2"
-		(shape input)
-		(at 73.66 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bd6e0e46-88a0-4dc5-ab0c-30c33170c35a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.1672 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SA0"
-		(shape input)
-		(at 73.66 101.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cc54d711-069e-4424-bd31-79a3c295cfcd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.1672 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SA1"
-		(shape input)
-		(at 73.66 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec52d8da-9237-44d4-b028-5f39f84f5be4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.1672 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 86.36 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40717e26-6890-4bf9-a9e5-8a084794a2f0")
-		(property "Reference" "J_HOST_SPD"
-			(at 88.9 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "HOST_SMBUS_SPD (placeholder)"
-			(at 88.9 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 86.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "689d22fc-d36b-49f8-b1fb-a113c4359f5c")
-		)
-		(pin "4"
-			(uuid "ee464df3-dfc1-4539-90e4-2aa464be078b")
-		)
-		(pin "3"
-			(uuid "9120c75c-f5e2-486b-98ed-d856146098ea")
-		)
-		(pin "5"
-			(uuid "68041129-4a0e-495b-8b5f-8c284e7d701f")
-		)
-		(pin "6"
-			(uuid "2d214b70-d3d7-4e07-a2bb-76f81a6b9776")
-		)
-		(pin "8"
-			(uuid "8cb9ab8f-ee16-4ef6-92e2-a0d982891573")
-		)
-		(pin "1"
-			(uuid "e8f81b77-3ead-4abe-bf0f-5e2aa6ed8737")
-		)
-		(pin "2"
-			(uuid "a705f4ef-d32c-4d4e-bdb7-5fe09a268b97")
-		)
-		(instances
-			(project ""
-				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/32845847-1fe2-4b3a-b24a-3fdd7e5b4214"
-					(reference "J_HOST_SPD")
-					(unit 1)
-				)
 			)
 		)
 	)
