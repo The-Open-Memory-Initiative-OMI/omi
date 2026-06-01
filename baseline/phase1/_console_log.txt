@@ -1,6 +1,6 @@
 OMI Phase 1 kicad-cli console log
-root: C:\Users\senso\OneDrive\Masaüstü\CVWebpage\omi-project\design\power\omi_v1_power\omi_v1_power.kicad_sch
-cli: C:\Users\senso\AppData\Local\Programs\KiCad\9.0\bin\kicad-cli.exe (9.0.8)
+root: design/power/omi_v1_power/omi_v1_power.kicad_sch
+cli: kicad-cli.exe (9.0.8)
 
 
 === [1] ERC json (exit=0) ===
