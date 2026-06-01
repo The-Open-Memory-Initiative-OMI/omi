@@ -151,6 +151,8 @@ All contributors are expected to interact respectfully and professionally.
 
 Technical disagreement is encouraged. Personal attacks, harassment, or exclusionary behavior are not tolerated.
 
+The full text is in [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
 ---
 
 ## **Questions**

@@ -164,9 +164,9 @@ Each layer must stand on its own before moving forward.
 
 This approach favors long-term stability over short-term progress.
 
-### 4.6 Community Over Authority:
+### 4.6 Decisions Follow Evidence, Not Authority:
 
-No individual, organization, or sponsor has unilateral control over the technical direction of the project.
+Design decisions are justified on technical grounds — not seniority, affiliation, or assertion.
 
 Decisions are made based on:
 
@@ -174,7 +174,7 @@ Decisions are made based on:
 2. Evidence  
 3. Reproducibility
 
-Authority in OMI is earned through contribution, not position.
+A decision stands because it can be defended and reproduced, not because of who made it.
 
 ### 4.7 Transparency Includes Limitations:
 
@@ -403,9 +403,9 @@ If OMI allows others to learn, to experiment, and to extend the work without per
 
 ## 
 
-## 9\. Community, Governance, and Contribution Model:
+## 9\. Governance and Contribution Model:
 
-OMI is a community-based engineering project. Its long-term success hangs on explicit expectations regarding participation, decision-making, and responsibility. This section defines how the project is organized and how contributors interact. OMI doesn't want to enforce control; governance in OMI is continuity.
+OMI is currently developed and maintained by a single author, in the open. It is built so that others can read, reproduce, challenge, and extend the work — not as a multi-stakeholder consortium. This section describes how the project is organized and how contributors can take part. "Governance" here means continuity and transparency — decisions recorded and justified so they can be audited — not committees or control.
 
 ### 9.1 Who Can Contribute:
 
@@ -417,11 +417,11 @@ OMI does not just depend on generating code and drawing schematics. Valid contri
 
 ### 9.3 Decision-Making Process:
 
-Technical decisions in OMI are made in public and are justified on technical grounds. Discussions, proposals, and assessments take place in forums linked to project developments. At the same time, decisions are based on the evidence available, reproducibility, and alignment with the project's projected scope and principles. Where disagreements exist, those approaches should be preferred because they minimize risk, add clarity, or keep openness. No one contributor has full control over the technical direction of the project.
+Technical decisions are made on the record and justified on technical grounds. They are based on the available evidence, reproducibility, and alignment with the project's scope and principles. Where trade-offs exist, the option that minimizes risk, adds clarity, or preserves openness is preferred. Decisions and their rationale are documented so they can be audited and revisited later.
 
-### 9.4 Maintainers and Stewardship:
+### 9.4 Maintenance:
 
-Maintainers & contributors responsible for reviewing contributions, integrating changes, and making sure everything is done consistently across multiple functions of the project. Maintainer roles are earned through continuous, well-substantiated contributions and can be revoked if responsibilities are left unfulfilled. The maintainers are stewards of the principles behind the project and not gatekeepers of participation.
+The project is presently maintained by its author, who reviews contributions for consistency, correctness, and alignment with the charter's principles and scope. As the project grows, maintenance can be shared with sustained contributors. Maintainers are stewards of the project's principles, not gatekeepers of participation.
 
 ### 9.5 Transparency and Accountability:
 
@@ -429,7 +429,7 @@ All project work is in public view. This extends to design discussions, reviews,
 
 ### 9.6 Code of Conduct:
 
-OMI expects all participants to participate respectfully and professionally. Technical disagreement is encouraged. Personal attacks, harassment, and exclusionary behavior are not accepted. The project emphasizes that clarity, honesty, and mutual respect are of core value to effective engineering collaboration.
+OMI expects all participants to participate respectfully and professionally. Technical disagreement is encouraged. Personal attacks, harassment, and exclusionary behavior are not accepted. The project emphasizes that clarity, honesty, and mutual respect are of core value to effective engineering collaboration. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## 10\. Risks, Limitations, and Reality Check:
 

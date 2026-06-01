@@ -4,7 +4,7 @@
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in the
-World Monitor community a harassment-free experience for everyone, regardless of age, body
+the Open Memory Initiative (OMI) community a harassment-free experience for everyone, regardless of age, body
 size, visible or invisible disability, ethnicity, sex characteristics, gender
 identity and expression, level of experience, education, socio-economic status,
 nationality, personal appearance, race, caste, color, religion, or sexual
@@ -46,9 +46,7 @@ spaces.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the project maintainer at **[GitHub Issues](https://github.com/koala73/worldmonitor/issues)** or by contacting the
-repository owner directly through GitHub.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported privately to the project maintainer at sensoymertefe@gmail.com . Please do not use public GitHub Issues for sensitive reports.
 
 All complaints will be reviewed and investigated promptly and fairly. The project
 team is obligated to maintain confidentiality with regard to the reporter of an
