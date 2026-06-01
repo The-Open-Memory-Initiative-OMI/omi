@@ -1,0 +1,22 @@
+OMI Phase 1 kicad-cli console log
+root: design/power/omi_v1_power/omi_v1_power.kicad_sch
+cli: kicad-cli.exe (9.0.8)
+
+
+=== [1] ERC json (exit=0) ===
+Found 131 violations
+Saved ERC Report to baseline/phase1/erc_report.json
+
+=== [2] ERC report (exit=0) ===
+Found 131 violations
+Saved ERC Report to baseline/phase1/erc_report.txt
+
+=== [3] netlist kicadxml (exit=0) ===
+Warning: schematic has annotation errors, please use the schematic editor to fix them
+
+=== [4] netlist kicadsexpr (exit=0) ===
+Warning: schematic has annotation errors, please use the schematic editor to fix them
+
+=== [5] BOM csv (exit=0) ===
+Warning: schematic has annotation errors, please use the schematic editor to fix them
+Wrote bill of materials to 'baseline/phase1/bom.csv'.
