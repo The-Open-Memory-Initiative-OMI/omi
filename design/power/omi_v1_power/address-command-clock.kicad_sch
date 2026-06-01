@@ -3250,6 +3250,107 @@
 		)
 		(embedded_fonts no)
 	)
+		(symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )
 	(wire
 		(pts
@@ -6931,16 +7032,28 @@
 		)
 		(uuid "ff3d6864-e6c2-40b6-9bdc-aaee0b4d67ee")
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 207.01 49.53 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "43b9d85d-d0d1-4467-9ab1-ed28cb16e917")
+		(uuid "6c6780f0-9e00-52bd-bb92-b10609ab63e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.01 49.53 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "VREF"
 		(shape input)
 		(at 82.55 109.22 0)
@@ -7004,36 +7117,72 @@
 			)
 		)
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 346.71 50.8 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "7b96cd68-f868-42e1-9dc1-fe703ddc2929")
+		(uuid "7228cf15-6d46-5d13-b218-344ed1ae80b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 346.71 50.8 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(label "VDDQ"
+
+	(global_label "VDD"
+		(shape input)
 		(at 135.89 168.91 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "92e5f876-289d-4d97-a883-3023730550e9")
+		(uuid "6a3480af-6a36-5a9a-a7db-b9824384ed53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.89 168.91 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(label "VDDQ"
+
+	(global_label "VDD"
+		(shape input)
 		(at 135.89 49.53 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "941517c1-45e2-4529-880d-edfb2f8eec44")
+		(uuid "cd91a10a-0c07-5279-975b-f0f4a6e3cf77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.89 49.53 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "VREF"
 		(shape input)
 		(at 227.33 229.87 0)
@@ -7055,16 +7204,28 @@
 			)
 		)
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 276.86 49.53 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "affe1b2f-f283-400e-8724-12e15a8fa418")
+		(uuid "963c2df4-ff36-590f-825b-c2c056c722c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.86 49.53 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "VREF"
 		(shape input)
 		(at 156.21 109.22 0)
@@ -7086,16 +7247,28 @@
 			)
 		)
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 62.23 168.91 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "c12d1e86-5f67-4a38-90e1-1e84d97f20fa")
+		(uuid "ae0d37e0-ecf6-55a3-ae92-466c5fe4590f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 168.91 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "VREF"
 		(shape input)
 		(at 367.03 110.49 0)
@@ -7117,16 +7290,28 @@
 			)
 		)
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 62.23 49.53 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "d0650496-174e-4262-ab65-404316d99d34")
+		(uuid "b7142a08-f59c-5b59-8fb3-5e5853555c6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 49.53 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "VREF"
 		(shape input)
 		(at 156.21 228.6 0)
@@ -7169,16 +7354,28 @@
 			)
 		)
 	)
-	(label "VDDQ"
+	(global_label "VDD"
+		(shape input)
 		(at 207.01 170.18 270)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "e5e98482-b578-44b3-8224-b546eeeba2f7")
+		(uuid "be458223-53aa-5500-a758-f7e3f343384c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.01 170.18 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
+
 	(global_label "BA0"
 		(shape input)
 		(at 113.03 238.76 180)
@@ -20219,6 +20416,390 @@
 		(uuid "bce832a1-ea2e-535c-aa1c-152fae548c8f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 387.35 198.12 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 406.4 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed88c020-eef4-5ba6-91ee-c7956300a68f")
+		(property "Reference" "#FLG_VDD"
+			(at 406.4 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 406.4 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power flag (off-board supply via the J1 host edge)"
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88edfd6d-b2e1-5a49-9ddd-de5c3e2288df")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "#FLG_VDD")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 406.4 69.85) (xy 406.4 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ec1b1e-db3c-5066-a162-8f3e952ad485")
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 406.4 72.39 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d3618be-39a2-5b83-9e0c-044b9dcd0fab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 406.4 72.39 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 406.4 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "163d11b4-1897-5e53-b70a-d7e0289cac75")
+		(property "Reference" "#FLG_VPP"
+			(at 406.4 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 406.4 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power flag (off-board supply via the J1 host edge)"
+			(at 406.4 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "742db465-cfa3-5fa8-882d-37b7d6e001b8")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "#FLG_VPP")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 406.4 87.63) (xy 406.4 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af1ff6b8-a850-5761-99c1-e74501778150")
+	)
+	(global_label "VPP"
+		(shape input)
+		(at 406.4 90.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd0b5786-7ae0-5b53-8744-70cdb1bbce75")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 406.4 90.17 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 406.4 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cf64275-3284-5d08-a7d7-c407707991ff")
+		(property "Reference" "#FLG_GND"
+			(at 406.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 406.4 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power flag (off-board supply via the J1 host edge)"
+			(at 406.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05cb40dd-7fcc-578c-bcdb-5031a2e2905b")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "#FLG_GND")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 406.4 105.41) (xy 406.4 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81d8fd3-6a1a-5a27-97ca-fad2a09abb53")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 406.4 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4a00ad31-aefc-565a-8a91-68bc083d5e01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 406.4 107.95 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 406.4 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f06c1d7e-b2cb-5a1c-9f7a-262f4224a6c2")
+		(property "Reference" "#FLG_VDDSPD"
+			(at 406.4 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 406.4 125.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power flag (off-board supply via the J1 host edge)"
+			(at 406.4 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f29e4d5a-9056-512e-9367-4d7b4e1fe36e")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "#FLG_VDDSPD")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 406.4 123.19) (xy 406.4 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ef4b16-a070-537e-b420-a3f1fab7e699")
+	)
+	(global_label "VDDSPD"
+		(shape input)
+		(at 406.4 125.73 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bab2bf4a-cc57-5b39-bfdf-8ad50473babc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 406.4 125.73 270)
 			(effects
 				(font
 					(size 1.27 1.27)
