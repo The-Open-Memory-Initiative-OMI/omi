@@ -525,7 +525,7 @@
     (library (logical "Memory_EEPROM")
       (uri "C:\\Users\\USERNAME\\AppData\\Local\\Programs\\KiCad\\9.0\\share\\kicad\\symbols\\/Memory_EEPROM.kicad_sym"))
     (library (logical "Memory_RAM")
-      (uri "C:\\Users\\senso\\AppData\\Local\\Programs\\KiCad\\9.0\\share\\kicad\\symbols\\/Memory_RAM.kicad_sym")))
+      (uri "C:\\Users\\USERNAME\\AppData\\Local\\Programs\\KiCad\\9.0\\share\\kicad\\symbols\\/Memory_RAM.kicad_sym")))
   (nets
     (net (code "1") (name "/VDDQ") (class "Default")
       (node (ref "J_PWR") (pin "2") (pinfunction "Pin_2") (pintype "passive")))
