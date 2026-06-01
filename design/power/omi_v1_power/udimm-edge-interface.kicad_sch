@@ -9180,28 +9180,6 @@
 			)
 		)
 	)
-	(global_label "ALERT_n"
-		(shape input)
-		(at 177.8 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "65234f7a-7cbe-599d-ab20-df79cc844670")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VDD"
 		(shape input)
 		(at 177.8 172.72 0)
@@ -11725,4 +11703,8 @@
 		)
 	)
 	(embedded_fonts no)
+	(no_connect
+		(at 177.8 170.18)
+		(uuid "4229d49c-ccce-4e58-87bf-c83ff3a7035e")
+	)
 )
