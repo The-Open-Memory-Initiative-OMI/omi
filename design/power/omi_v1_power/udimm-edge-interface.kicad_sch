@@ -9422,28 +9422,6 @@
 			)
 		)
 	)
-	(global_label "PARITY"
-		(shape input)
-		(at 177.8 205.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2f40d281-52ac-5cd7-81da-966a6c5c5028")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VDD"
 		(shape input)
 		(at 177.8 208.28 0)
@@ -11706,5 +11684,9 @@
 	(no_connect
 		(at 177.8 170.18)
 		(uuid "4229d49c-ccce-4e58-87bf-c83ff3a7035e")
+	)
+	(no_connect
+		(at 177.8 205.74)
+		(uuid "cb116440-1d80-4bac-b1b9-d6fa3b32fc27")
 	)
 )
