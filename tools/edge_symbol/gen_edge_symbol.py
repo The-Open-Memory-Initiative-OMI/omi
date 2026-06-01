@@ -528,7 +528,7 @@ def main(argv: list[str]) -> int:
     args = ap.parse_args(argv)
 
     if args.verify:
-        return verify(args.out_sym, args.csv)
+        return verify(args.out_sym, args.csv, args.power_type)
 
     pins = read_pinmap(args.csv, args.power_type)
 
