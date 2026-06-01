@@ -3126,7 +3126,131 @@
 			)
 			(embedded_fonts no)
 		)
+			(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
 	)
+)
 	(wire
 		(pts
 			(xy 153.67 198.12) (xy 157.48 198.12)
@@ -19055,6 +19179,1046 @@
 		(uuid "e417b46b-eaee-55e2-af3e-8074d3008cef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 189.23 234.95 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ0"
+		(shape input)
+		(at 80.01 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3beae340-1fdd-51c9-8da2-370cb96d8050")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.01 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08df79b1-663b-5f6b-b939-9b7c18da5fda")
+		(property "Reference" "R1"
+			(at 391.16 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7fdd0158-5098-5a3d-b741-9beabadfdd30")
+		)
+		(pin "1"
+			(uuid "bb960ccc-2d14-535a-bea6-5403a186a4d1")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ0"
+		(shape input)
+		(at 387.35 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d48ef1d9-327f-5ae3-8c51-7cea06c0a478")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 73.66 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32655017-8e34-5a19-9cd5-034296e5f427")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 73.66 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ1"
+		(shape input)
+		(at 153.67 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b782dc94-4411-5af3-96dc-b35a6e61bbf4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0d9ce51-c1e8-5247-bc09-11f807b91732")
+		(property "Reference" "R2"
+			(at 391.16 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "96596128-6964-5464-a1f4-000dbdf9f70f")
+		)
+		(pin "1"
+			(uuid "de141d3b-a16d-5e0a-ae5c-c1f54801c8d8")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ1"
+		(shape input)
+		(at 387.35 83.82 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5e90e95-4ea2-5b33-8f0b-7abbe23160e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 91.44 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aabfa228-df9f-586f-aaef-f12c6d8a9b7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 91.44 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ2"
+		(shape input)
+		(at 224.79 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ca65ade-5fab-5df6-9c4f-a8b45f4fc43f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b55a568-34f3-5dc6-ba5a-dfcc94c64d10")
+		(property "Reference" "R3"
+			(at 391.16 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c3effd5e-08f6-5cfc-9e82-b9d9c4b6fa88")
+		)
+		(pin "1"
+			(uuid "93f70de2-a9bf-5fbb-91e9-82cd7a78d358")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ2"
+		(shape input)
+		(at 387.35 101.6 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32590826-437d-546d-b9f9-68688c46d2bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 109.22 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "135b06f3-8275-5126-8faa-24f0304b020e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 109.22 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ3"
+		(shape input)
+		(at 294.64 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c407f334-44e9-5191-922c-0fc290582ac4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 294.64 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "64af68e8-0a8f-5c9f-bd16-5f1c4dee9ff7")
+		(property "Reference" "R4"
+			(at 391.16 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e1ccc18-548e-524b-8696-946330fd3958")
+		)
+		(pin "1"
+			(uuid "421af86c-60d8-59fa-9d31-9920dcfe4f27")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ3"
+		(shape input)
+		(at 387.35 119.38 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3924c52f-009a-566c-9593-c9240d7ce346")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 127 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d31f115-b72d-52f2-99ff-fb8df2483f86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 127 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ4"
+		(shape input)
+		(at 364.49 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab4ebc5f-27a1-5166-bc09-8ce89825a01d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 364.49 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "450dab22-e9ac-5337-8429-6786ec61988f")
+		(property "Reference" "R5"
+			(at 391.16 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebc5c370-db6b-58a4-a367-a4e41a229eb5")
+		)
+		(pin "1"
+			(uuid "0e8ed707-400d-53b6-9e1f-08f36af693d1")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ4"
+		(shape input)
+		(at 387.35 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19acc4a6-5b72-5b44-a7e1-b898422d6fe5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 144.78 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a0085b2-cbb9-558a-8e2c-019d5ecf6f90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 144.78 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ5"
+		(shape input)
+		(at 80.01 231.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "43da789f-f8e1-5b6b-9a19-accb01b697af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.01 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fca099e3-54b2-5601-b210-c5f3c78cae26")
+		(property "Reference" "R6"
+			(at 391.16 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f9758ea0-7c81-5172-bdb8-026323270375")
+		)
+		(pin "1"
+			(uuid "9dbe95fe-16fd-5c83-9c0e-6f523ba450c0")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ5"
+		(shape input)
+		(at 387.35 154.94 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1e1cb78-b29a-5b77-bab1-ac49d99e0b30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 162.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d61d92a-e320-5c9f-b322-5025089253b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 162.56 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ6"
+		(shape input)
+		(at 153.67 231.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3dd89570-445c-5b89-a38a-d6ff0c2c08a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e39b3bd-e476-531c-86a1-b2861f4d9542")
+		(property "Reference" "R7"
+			(at 391.16 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f6d909c-9449-555e-b6d6-b38ea89fab2f")
+		)
+		(pin "1"
+			(uuid "f71e84ae-b7f6-59c1-af49-b9785509ffa2")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ6"
+		(shape input)
+		(at 387.35 172.72 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b104811-e114-58c2-805d-277dce7f37b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 180.34 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35fcefa1-f04c-5642-9e74-286037cd0a0c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 180.34 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ZQ7"
+		(shape input)
+		(at 224.79 232.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7fef7c7b-d13a-5a73-8480-6fb09cc06e94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 387.35 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c545bdd-2453-5d73-8025-113cfa19bc85")
+		(property "Reference" "R8"
+			(at 391.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "240"
+			(at 391.16 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 385.572 194.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 387.35 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2185520a-4f36-5281-a046-185997eaf4ed")
+		)
+		(pin "1"
+			(uuid "dcd87a42-f91b-5f01-8058-58db4b816f49")
+		)
+		(instances
+			(project "omi_v1_power"
+				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/0608c925-7d0a-486c-adfa-f9e150a950d8"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ZQ7"
+		(shape input)
+		(at 387.35 190.5 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b15fac0b-e1b6-5544-b842-41f9e332d0c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 190.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 387.35 198.12 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bce832a1-ea2e-535c-aa1c-152fae548c8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 387.35 198.12 270)
 			(effects
 				(font
 					(size 1.27 1.27)
