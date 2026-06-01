@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-01
 **Branch:** `phase3-integration` (based on `phase2-edge-symbol`, which carries `J1`)
-**Status:** in progress — plan documented before edits per the documentation-first rule.
+**Status:** complete — ERC 135 → 85, annotation warning cleared, connectivity verified; PR open (not merged).
 **Tooling:** `kicad-cli` 9.0.8 (KiCad 9.0, format `20250114`); `powershell.exe`.
 
 ---
@@ -118,7 +118,57 @@ Untouched: the P2 symbol (`omi.kicad_sym`) and generator (`tools/edge_symbol/**`
 
 ## 7. Verification
 
-_(Filled in during execution — per-step ERC deltas, final count, connectivity sanity.)_
+**Per-step ERC deltas** (validation pair — `sch erc --severity-all --format json` + `sch
+export netlist --format kicadxml` — run and recorded after every commit; each netlist
+re-parsed; connectivity re-checked):
+
+| # | Commit | Change | ERC | Δ |
+| --- | --- | --- | --- | --- |
+| 0 | `bcff461` | plan + baseline evidence | 135 | — |
+| 1 | `8606a22` | ALERT_n → no_connect (edge) | 134 | −1 |
+| 2 | `8f174d6` | PARITY → no_connect (edge) | 133 | −1 |
+| 3 | `90eb329` | remove J_HOST_SPD (spd) | 132 | −1 |
+| 4 | `0b68d5e` | remove J_HOST_DQ_A (data) | 125 | −7 |
+| 5 | `22383a1` | remove J_HOST_DQ_B (data) | 118 | −7 |
+| 6 | `f0005cc` | remove J_HOST_DQ_C (data) | 100 | −18 |
+| 7 | `35f0e40` | remove J_HOST (acc) | 89 | −11 |
+| 8 | `08a6c11` | VREF merge (acc) | 88 | −1 |
+| 9 | `6473a5d` | remove root J_PWR block | 85 | −3 |
+
+**Final ERC = 85** (all `error` severity; every warning-level item cleared), per sheet:
+`/` 0 · `/address-command-clock/` 84 (64 `pin_not_connected` + 16 `pin_not_driven` + 4
+`power_pin_not_driven`) · `/data-byte-lanes-dqs/` 0 · `/spd-and-configuration/` 1
+(`power_pin_not_driven`) · `/udimm-edge-interface/` 0. `kicad-cli` no longer prints the
+annotation warning.
+
+**The +4 P2 items — all resolved:** ALERT_n `global_label_dangling` (step 1, no_connect),
+PARITY `global_label_dangling` (step 2, no_connect), VREF `global_label_dangling` (step 8,
+DRAM VREFCA merged to global), VREF `same_local_global_label` (step 9, last local VREF gone
+with J_PWR). VTT needed no action (already a clean 2-node net). VDDQ (the "5th"): the root
+`/VDDQ` dangling stub cleared with J_PWR; the DRAM VDDQ rail is left local for P5.
+
+**Δ vs baseline 131 (the non-+4 part):** −44 `pin_not_connected` (placeholder floating pins:
+32 data + 11 J_HOST + 1 spd) and −2 `label_dangling` (the J_PWR VREF/VDDQ stubs) — both
+direct, expected consequences of removing the redundant placeholders. `pin_not_driven` (16)
+unchanged. `power_pin_not_driven` total unchanged at 5 (the GND not-driven relocated from the
+placeholder `#PWR06` to the real DRAM GND pin — a P5 item, now reported where it belongs).
+
+**Connectivity sanity (final netlist sampling) — no split, no accidental merge:**
+
+| Net | Nodes | Spans |
+| --- | --- | --- |
+| D0_DQ0, D4_DQ4, D7_DQ7 | 2 each | J1 ↔ U_DRAM0/4/7 (byte-lane DQ) |
+| D0_DQS_t | 2 | J1 ↔ U_DRAM0 (strobe) |
+| CK_t, CK_c | 9 each | J1 ↔ all 8 DRAMs (clock fan-out) |
+| VDD / VPP / VREF | 91 / 21 / 9 | J1 ↔ all 8 DRAMs (rails) |
+| GND | 200 | J1 ↔ 8 DRAMs ↔ U_SPD0 |
+| SPD_SCL, SPD_SDA, VDDSPD, SA0 | 2 each | J1 ↔ U_SPD0 (SPD reachable) |
+
+J1 remains 288 pins (symbol untouched); all 6 placeholders absent.
+
+**Hierarchy (§10):** **skipped** — confirmed unnecessary. All 4 sub-sheets are already
+properly instantiated (sheet boxes + valid `sheet_instances` + per-symbol instance paths);
+connectivity rides on global labels by design. Adding sheet-pins would be cosmetic only.
 
 ## 8. Remaining (handoff)
 
