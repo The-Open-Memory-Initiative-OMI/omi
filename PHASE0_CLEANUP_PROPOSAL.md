@@ -141,7 +141,7 @@ by removing files — consistent with the brief's "right-size, do not gut" and "
 > Confirm the split, or tell me to unify and I'll amend.
 
 Secondary flag within the split: the docs license is currently **CC-BY-SA-4.0** (ShareAlike /
-copyleft). The brief floated **CC-BY-4.0** (permissive). Kept SA to avoid an unilateral copyleft
+copyleft). The brief floated **CC-BY-4.0** (permissive). Kept SA to avoid a unilateral copyleft
 change — say the word to switch.
 
 ---
