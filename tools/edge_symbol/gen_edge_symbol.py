@@ -454,9 +454,9 @@ def _walk_pins(node, found):
             _walk_pins(child, found)
 
 
-def verify(sym_path: Path, csv_path: Path) -> int:
+def verify(sym_path: Path, csv_path: Path, power_type: str) -> int:
     """Assert the emitted symbol has 288 pins exactly matching the CSV (number+name+type)."""
-    pins = read_pinmap(csv_path, power_type="passive")
+    pins = read_pinmap(csv_path, power_type=power_type)
     expected_by_number = {str(p.number): p for p in pins}
     text = sym_path.read_text(encoding="utf-8")
     root = _parse(_tokenize(text))
