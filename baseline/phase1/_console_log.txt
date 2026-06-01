@@ -5,11 +5,11 @@ cli: kicad-cli.exe (9.0.8)
 
 === [1] ERC json (exit=0) ===
 Found 131 violations
-Saved ERC Report to C:\Users\senso\OneDrive\Masaüstü\CVWebpage\omi-project\baseline\phase1\erc_report.json
+Saved ERC Report to baseline/phase1/erc_report.json
 
 === [2] ERC report (exit=0) ===
 Found 131 violations
-Saved ERC Report to C:\Users\senso\OneDrive\Masaüstü\CVWebpage\omi-project\baseline\phase1\erc_report.txt
+Saved ERC Report to baseline/phase1/erc_report.txt
 
 === [3] netlist kicadxml (exit=0) ===
 Warning: schematic has annotation errors, please use the schematic editor to fix them
