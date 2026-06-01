@@ -585,7 +585,7 @@
   </libparts>
   <libraries>
     <library logical="Connector_Generic">
-      <uri>C:\Users\senso\AppData\Local\Programs\KiCad\9.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+      <uri>C:\Users\USERNAME\AppData\Local\Programs\KiCad\9.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Memory_EEPROM">
       <uri>C:\Users\senso\AppData\Local\Programs\KiCad\9.0\share\kicad\symbols\/Memory_EEPROM.kicad_sym</uri>
