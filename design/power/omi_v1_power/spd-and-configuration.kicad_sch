@@ -5,8 +5,9 @@
 	(uuid "dfd5ba7f-91da-4ad0-9af6-5ea67d23dbb7")
 	(paper "A4")
 	(title_block
-		(title "Stage 7.4 — SPD & Configuration")
-		(date "2026-02-27")
+		(title "SPD & Configuration")
+		(date "2026-06-02")
+		(rev "1.1.0")
 		(company "OMI")
 		(comment 3 "Assumptions:\n- SMBus pull-ups for SPD_SCL and SPD_SDA are provided by host platform.\n- WP is tied low (writes enabled) for OMI v1 development.\n- SA0/SA1/SA2 are slot/address straps (host-side).")
 	)
@@ -574,7 +575,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 93.98) (xy 184.15 93.98)
+			(xy 147.32 93.98) (xy 152.4 93.98)
 		)
 		(stroke
 			(width 0)
@@ -584,7 +585,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 96.52) (xy 158.75 96.52)
+			(xy 121.92 96.52) (xy 127 96.52)
 		)
 		(stroke
 			(width 0)
@@ -594,7 +595,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 83.82) (xy 168.91 88.9)
+			(xy 137.16 83.82) (xy 137.16 88.9)
 		)
 		(stroke
 			(width 0)
@@ -604,7 +605,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 104.14) (xy 168.91 109.22)
+			(xy 137.16 104.14) (xy 137.16 109.22)
 		)
 		(stroke
 			(width 0)
@@ -614,7 +615,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 93.98) (xy 158.75 93.98)
+			(xy 121.92 93.98) (xy 127 93.98)
 		)
 		(stroke
 			(width 0)
@@ -624,7 +625,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 96.52) (xy 184.15 96.52)
+			(xy 147.32 96.52) (xy 152.4 96.52)
 		)
 		(stroke
 			(width 0)
@@ -634,7 +635,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 99.06) (xy 184.15 99.06)
+			(xy 147.32 99.06) (xy 152.4 99.06)
 		)
 		(stroke
 			(width 0)
@@ -644,7 +645,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 99.06) (xy 158.75 99.06)
+			(xy 121.92 99.06) (xy 127 99.06)
 		)
 		(stroke
 			(width 0)
@@ -654,7 +655,7 @@
 	)
 	(global_label "VDDSPD"
 		(shape input)
-		(at 168.91 83.82 180)
+		(at 137.16 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -664,7 +665,7 @@
 		)
 		(uuid "0ec8d3e7-def6-4e11-893e-d11e9195ef15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.5467 83.82 0)
+			(at 126.7967 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -676,7 +677,7 @@
 	)
 	(global_label "SA0"
 		(shape input)
-		(at 153.67 93.98 180)
+		(at 121.92 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -686,7 +687,7 @@
 		)
 		(uuid "24941a83-3f9f-4724-b7b0-6788f677c161")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1772 93.98 0)
+			(at 115.4272 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -698,7 +699,7 @@
 	)
 	(global_label "SPD_SCL"
 		(shape input)
-		(at 184.15 96.52 0)
+		(at 152.4 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -708,7 +709,7 @@
 		)
 		(uuid "2de1a88a-444b-4145-a285-6a4c1352b25a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.3599 96.52 0)
+			(at 163.6099 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -720,7 +721,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 168.91 109.22 180)
+		(at 137.16 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -730,7 +731,7 @@
 		)
 		(uuid "35e579ef-3acb-4007-af98-1815261c1e51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.0543 109.22 0)
+			(at 130.3043 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -742,7 +743,7 @@
 	)
 	(global_label "SPD_SDA"
 		(shape input)
-		(at 184.15 93.98 0)
+		(at 152.4 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -752,7 +753,7 @@
 		)
 		(uuid "54e4ad06-656c-4d37-a306-4690e8e75080")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.4204 93.98 0)
+			(at 163.6704 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -764,7 +765,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 184.15 99.06 0)
+		(at 152.4 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -774,7 +775,7 @@
 		)
 		(uuid "7a97145f-bafe-4048-b8ba-fc1da1947bbc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 191.0057 99.06 0)
+			(at 159.2557 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -786,7 +787,7 @@
 	)
 	(global_label "SA1"
 		(shape input)
-		(at 153.67 96.52 180)
+		(at 121.92 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -796,7 +797,7 @@
 		)
 		(uuid "7b1a2062-140e-4936-9049-26b2a951144c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1772 96.52 0)
+			(at 115.4272 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -808,7 +809,7 @@
 	)
 	(global_label "SA2"
 		(shape input)
-		(at 153.67 99.06 180)
+		(at 121.92 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -818,7 +819,7 @@
 		)
 		(uuid "a49c03e3-5fdc-402d-b2f8-ce1518734849")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1772 99.06 0)
+			(at 115.4272 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -830,7 +831,7 @@
 	)
 	(symbol
 		(lib_id "Memory_EEPROM:AT24CS01-MAHM")
-		(at 168.91 96.52 0)
+		(at 137.16 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -839,7 +840,7 @@
 		(fields_autoplaced yes)
 		(uuid "669d1028-f1af-40d7-907d-6f4c8b59629b")
 		(property "Reference" "U_SPD0"
-			(at 171.0533 86.36 0)
+			(at 139.3033 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,7 +849,7 @@
 			)
 		)
 		(property "Value" "DDR4_SPD_EEPROM"
-			(at 171.0533 88.9 0)
+			(at 139.3033 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +858,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
-			(at 168.91 96.52 0)
+			(at 137.16 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -866,7 +867,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf"
-			(at 168.91 96.52 0)
+			(at 137.16 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +876,7 @@
 			)
 		)
 		(property "Description" "I2C Serial EEPROM, 1Kb (128x8) with Unique Serial Number, UDFN8"
-			(at 168.91 96.52 0)
+			(at 137.16 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -911,7 +912,7 @@
 			(uuid "caab264c-5697-45c7-9566-9f06eb7304cb")
 		)
 		(instances
-			(project ""
+			(project "omi_v1_power"
 				(path "/464309c0-e3ad-4428-a43f-e1cf3b7a7d42/32845847-1fe2-4b3a-b24a-3fdd7e5b4214"
 					(reference "U_SPD0")
 					(unit 1)
