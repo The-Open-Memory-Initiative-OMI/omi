@@ -33,43 +33,54 @@ OMI exists to close this gap by providing:
 
 ## Project Status
 
-OMI is active and progressing deliberately. The OMI v1 target is a **reviewable DDR4 UDIMM reference design**: 8 GB, single rank (1R), x8 DRAM devices, non-ECC (64-bit bus).
+OMI v1 is a **reviewable DDR4 UDIMM reference design**: 8 GB, single rank (1R), x8 DRAM devices, non-ECC (64-bit bus). **The schematic stage is complete.**
 
-### Completed
+### ✅ Schematic capture — complete, ERC-clean, and netlisted
 
-- Project charter, governance model, and contribution workflow
-- Staged engineering approach (architecture → blocks → schematic capture → validation)
-- **Stage 5 — Architecture Decisions** — OMI v1 direction locked (DDR4 UDIMM baseline)
-- **Stage 6 — Block Decomposition** — all core blocks documented and closure declared (power, CA/CLK, DQ/DQS, SPD, mechanical, validation plan)
-- **Stage 7 — Schematic Capture — complete and frozen:**
-  - 7.1 Power & PDN (frozen)
-  - 7.2 Address/Command/Clock (frozen — simplified star representation; fly-by enforced at layout)
-  - 7.3 Data (DQ/DQS) byte-lanes (frozen — per-DRAM net naming D0…D7)
-  - 7.4 SPD & Configuration (frozen — host pull-ups; WP tied low)
-  - 7.5 UDIMM Edge Pin Map (frozen — 288/288 pins mapped, no duplicates, no missing)
-  - 7.6 Interface Summary (frozen)
-  - 7.7 Stage 7 Closure (frozen — quality gates passed, handoff to Stage 8)
+The OMI v1 schematic is captured in KiCad and **passes Electrical Rule Check with 0 violations — no exclusions, no waivers**:
 
-- **Stage 8 — Validation & Bring-Up Strategy — documentation complete:**
-  - Validation ladder (L0–L4) with pass/fail criteria and stop conditions
-  - Platform strategy: Class A/B/C taxonomy, specific board recommendations, phased approach
-  - Step-by-step bring-up procedure from bare PCB to OS boot
-  - Test point and DFT plan (17 test points, probe access requirements for layout)
-  - Success criteria, failure mode catalog (FS-01–FS-06), and diagnostic decision trees
-  - Pre-fabrication (26 items) and post-fabrication (17 items) review checklists
-  - Automated validation scripts (L0/L1 runners, pin map verifier, naming verifier)
-  - Stage 8 closure criteria defined; physical L1–L4 execution awaits fabricated hardware
+- A real **288-pin DDR4 UDIMM card-edge connector (`J1`)**, pin-mapped from the JEDEC keystone pin map. The placeholder host connectors used during early capture have been **removed** — `J1` is the genuine module edge.
+- **18 / 18 real components footprinted**: `J1` (288-pad card edge), 8× DDR4 SDRAM (FBGA-78), one SPD EEPROM (UDFN-8), and 8× ZQ calibration resistors (R1–R8, 240 Ω).
+- ERC reaches 0 through **real connections** — datasheet-genuine no-connect flags on truly-NC balls, VSS ties on `TEN`/`PAR`, the eight mandatory ZQ resistors, and `PWR_FLAG`s on host-supplied rails — **not** through exclusions or waivers.
+- A **generated netlist** (KiCad XML + s-expression), **BOM** (CSV), and **5-page schematic PDF** are checked in under [`exports/`](./exports/), produced by an export step **gated on the clean ERC**.
 
-### In Progress
+**Evidence (reproducible):** [`exports/`](./exports/) holds the netlist, BOM, PDF, and `erc.json` (0 violations); [`exports/MANIFEST.txt`](./exports/MANIFEST.txt) records the source commit, `kicad-cli` version, and a SHA-256 for every artifact. The KiCad source is at [`design/power/omi_v1_power/`](./design/power/omi_v1_power/). The step-by-step engineering record is in [`docs/implementations/`](./docs/implementations/).
 
-- **Stage 9 — Minimal Reference Schematic** (correctness-first, one rank, no optimizations)
-  - Incorporates Stage 8 test point requirements into schematic and layout constraints
-  - Impedance and stackup constraints from platform strategy
-  - SPD content specification (hex image, EEPROM programming)
+### What "validated" means here — and what it does not
 
-### Upcoming
+OMI v1 is a **schematic-stage** study. At this stage, "validation" means three real, reproducible things:
 
-- **Stage 10** — Layout & SI/PI Guidelines
+- **L0 — artifact integrity:** the 288/288 edge pin map and net naming pass automated checks ([`validation/evidence/l0_summary.md`](./validation/evidence/l0_summary.md)).
+- **ERC-clean:** the electrical rule check passes with 0 violations ([`exports/erc.json`](./exports/erc.json)).
+- **Export provenance:** every exported artifact is hashed and traceable to a commit ([`exports/MANIFEST.txt`](./exports/MANIFEST.txt)).
+
+**No hardware has been built, populated, or measured.** The physical bench-validation levels (**L1–L4**) are **defined as procedures but not executed** — there is no board, and there are no measurements. Any "PASS" in the bench-validation *framework* is a tooling/procedure dry-run over a blank template, **not** a hardware result (see [`validation/evidence/l1_summary.md`](./validation/evidence/l1_summary.md)).
+
+### Scope boundary — what is *not* here (the wall)
+
+OMI v1 stops at a complete, ERC-clean schematic. The following are **out of scope and do not exist** in this repository:
+
+- **PCB layout, Gerbers, and stack-up** — none produced.
+- **Signal-integrity / power-integrity (SI/PI) simulation** — none performed.
+- **A fabricated or bench-tested board** — none built; no measurements taken.
+
+Two caveats **scope** (they do not negate) the completed schematic:
+
+- **`J1` models the 288 numbered pads only.** Exact JEDEC notch position, card-edge outline, and pad-mechanical geometry are a layout/mechanical concern and are **unproven** here.
+- **Label-on-pin connectivity.** Global net labels are anchored directly on `J1` pins. This is ERC-clean and correct, but it is a known KiCad structural quirk (it prevented directional pin retyping) and is flagged for future cleanup.
+
+### How the schematic was reached — documentation stages
+
+The completed schematic above was produced through OMI's staged, documentation-first method:
+
+- **Stage 5 — Architecture Decisions** — OMI v1 direction locked (DDR4 UDIMM baseline).
+- **Stage 6 — Block Decomposition** — power, CA/CLK, DQ/DQS, SPD, and mechanical blocks documented.
+- **Stage 7 — Schematic Capture — complete** — design intent (7.1 power/PDN, 7.2 CA/CLK, 7.3 DQ/DQS byte-lanes, 7.4 SPD, 7.5 288/288 edge pin map, 7.6 interface summary, 7.7 closure) **realized** as the ERC-clean, footprint-complete, netlisted KiCad design described above.
+- **Stage 8 — Validation & Bring-Up Strategy — documentation complete** — the L0–L4 ladder, platform strategy, bring-up procedure, test-point/DFT plan, failure-mode catalog, and review checklists are written. **L0 and ERC are satisfied today; physical L1–L4 execution awaits a fabricated board.**
+
+### Beyond the wall — not started
+
+- **Stage 9 — Minimal Reference Schematic refinements** (e.g. SPD hex image / EEPROM content) and **Stage 10 — Layout & SI/PI Guidelines** (PCB layout, impedance, stack-up, signal/power integrity). These are the stages that stand between this schematic and verifiable hardware, and they are **not started**.
 
 OMI prioritizes **structural correctness and reproducibility** over speed.
 
@@ -80,16 +91,21 @@ OMI prioritizes **structural correctness and reproducibility** over speed.
 OMI is organized by engineering stages:
 
 ```
-docs/05_architecture_decisions/   ← Stage 5: what we build and why
-docs/06_block_decomposition/      ← Stage 6: power, CA/CLK, DQ/DQS, SPD, mechanical
-docs/07_schematic_capture/        ← Stage 7: schematic-level intent (frozen)
-docs/08_validation_and_review/    ← Stage 8: validation framework, procedures, checklists
-docs/v1/                          ← OMI v1 decision docs (form factor, capacity, etc.)
-design/connector/                 ← 288-pin UDIMM edge connector CSV mapping
-validation/runs/                  ← Validation run logs and evidence (populated post-fabrication)
+design/power/omi_v1_power/            ← KiCad schematic — the actual capture (J1 edge, DRAM, SPD, ZQ),
+                                          omi.kicad_sym library, and the J1 card-edge footprint
+exports/                              ← Generated netlist, BOM, schematic PDF, erc.json (0 violations), MANIFEST.txt
+docs/05_power_delivery_and_pdn/       ← Power delivery & PDN assumptions
+docs/06_signal_topology_and_routing/  ← Signal topology: CA/CLK, DQ/DQS, routing philosophy
+docs/07_schematic_capture/            ← Stage 7: schematic-level intent and design rationale
+docs/08_validation_and_review/        ← Stage 8: validation framework, procedures, checklists
+docs/implementations/                 ← Phase-by-phase record of how the schematic was completed
+docs/v1/                              ← OMI v1 decision docs (form factor, capacity, etc.)
+design/connector/                     ← 288-pin UDIMM edge connector CSV pin map
+validation/evidence/                  ← L0 artifact-integrity evidence (real) + L1 framework dry-run (not measurements)
+validation/runs/                      ← Bench run logs (empty until a board is fabricated)
 ```
 
-If you're new: start with the engineering method doc below, then skim Stage 5 decisions, then follow Stage 7 artifacts.
+If you're new: start with the engineering method doc below, then skim the Stage 5–6 design docs, then read the completed schematic and its evidence in [`exports/`](./exports/).
 
 ---
 
@@ -190,6 +206,8 @@ redistribution principles defined in [CHARTER.md](CHARTER.md).
 ## Publications
 
 - [OMI Enters Stage 8: Turning a DDR4 UDIMM Schematic into Verifiable Hardware](https://medium.com/@mefe.sensoy/omi-enters-stage-8-turning-a-ddr4-udimm-schematic-into-verifiable-hardware-c6d252b0e1d3)
+
+  *Scope note:* this essay frames the project's **direction**. What this repository contains **today** is a complete, ERC-clean DDR4 UDIMM **schematic** with a generated netlist, BOM, and PDF — **not** fabricated or bench-verified hardware. Turning the schematic into *verifiable hardware* (layout, fabrication, bring-up) remains future work, beyond the current scope (see **Project Status → Scope boundary**, above).
 
 ---
 

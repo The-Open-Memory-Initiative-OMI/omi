@@ -1,6 +1,19 @@
-# OMI L1 Bench Electrical — Summary
+# OMI L1 Bench Electrical — FRAMEWORK DRY-RUN (NOT a bench measurement)
 
-**Status:** PASS
+> ⚠️ **HONESTY NOTICE — read first.** This is **not** a record of a hardware test.
+> No board was fabricated, populated, powered, or probed, and **no physical
+> measurements were taken.** This file is the output of running the L1 *tooling*
+> (`l1_runner.py`) over a **blank measurement template**
+> (`measurement_log_template.csv`). The "PASS" lines below mean only that the
+> **scripts executed and the template was structurally well-formed** — a
+> framework/procedure dry-run, **not** bench validation.
+>
+> For genuine, reproducible electrical evidence at the schematic stage, see the
+> ERC result [`../../exports/erc.json`](../../exports/erc.json) (0 violations) and
+> the L0 artifact-integrity summary [`l0_summary.md`](./l0_summary.md). Physical
+> L1–L4 bench validation **awaits a fabricated board** and has not been performed.
+
+**Framework status:** scripts ran successfully over a blank template — no hardware, no measurements.
 
 | Field | Value |
 |-------|-------|
@@ -8,15 +21,23 @@
 | Git Commit | `d7353012e0933e62ad5f45de10181e43ac5dd40b` |
 | Reference CSV | `design\connector\ddr4_udimm_288_pinmap.csv` |
 | CSV SHA-256 | `5b30e30d37293d0ea1f65ad08f4a162f285a102fb0955541aa9b5fee47714c14` |
-| Measurements | `docs\08_validation_and_review\L1_bench_electrical\measurement_log_template.csv` |
+| Measurements | `docs\08_validation_and_review\L1_bench_electrical\measurement_log_template.csv` **(BLANK TEMPLATE — no data)** |
 | Meas SHA-256 | `27c1ccfd60e391d8bd8586f4636bdbeaaca30e0949e35d63af6fbd19a2213480` |
 
-## Check Results
+## Framework Checks (tooling only — not measurements)
 
-| Check | Status |
-|-------|--------|
-| Probe Sequence Generation | PASS |
-| Continuity Log Validation | PASS |
+The results below reflect that the **scripts ran** over the blank template — **not**
+that any quantity was physically measured:
+
+| Framework check | Result |
+|-----------------|--------|
+| Probe Sequence Generation (script produced a probe plan) | ran OK |
+| Continuity Log Validation (template structurally complete: 288 rows/fields) | ran OK |
+
+> `continuity_report.json` in this directory is likewise a **template-structure**
+> check, not a continuity measurement: it confirms the blank log has the expected
+> 288 rows and fields. Its per-rail "PASS" lines describe the *template*, not a
+> probed board.
 
 ## Evidence Files
 
