@@ -1,0 +1,5 @@
+"Reference","Value","Footprint","Qty","DNP","Manufacturer","MPN","Procurement_Note"
+"J1","DDR4_UDIMM_288_Edge","omi:DDR4_UDIMM_288_Edge","1","","","","PCB card edge (board copper feature) - NOT a purchased part; exclude from procurement"
+"R1-R8","240","Resistor_SMD:R_0402_1005Metric","8","","","",""
+"U_DRAM0-U_DRAM7","H5AN8G8NAFR-UHC","Package_BGA:FBGA-78_7.5x11mm_Layout2x3x13_P0.8mm","8","","","",""
+"U_SPD0","DDR4_SPD_EEPROM","Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm","1","","","",""
