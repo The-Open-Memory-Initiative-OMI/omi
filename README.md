@@ -2,7 +2,7 @@
 
 # The Open Memory Initiative (OMI)
 
-The **Open Memory Initiative (OMI)** is A place to take memory hardware apart and rebuild it in the open - the kind of end-to-end reference work usually locked behind paywalled JEDEC raw cards and vendor NDAs. Every design decision is documented, every artifact is reproducible, and claims match reality: work is described at exactly the stage it has reached (schematic, validated, …), never more.
+The **Open Memory Initiative (OMI)** is a place to take memory hardware apart and rebuild it in the open - the kind of end-to-end reference work usually locked behind paywalled JEDEC raw cards and vendor NDAs. Every design decision is documented, every artifact is reproducible, and claims match reality: work is described at exactly the stage it has reached (schematic, validated, …), never more.
 
 OMI treats memory as a *first-class architectural system*, not a black box.
 The project emphasizes **documentation-first design**, explicit constraints, and reproducible validation - starting with mature PC DDR technologies.
