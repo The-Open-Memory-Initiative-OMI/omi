@@ -1,0 +1,5 @@
+# Transient working-doc clutter — keep it out of the repo so it can't recur.
+# NOTE: build/ is deliberately NOT ignored; it holds tracked phase evidence.
+PHASE*_BRIEF.md
+*_PROPOSAL.md
+AUDIT_*.md
