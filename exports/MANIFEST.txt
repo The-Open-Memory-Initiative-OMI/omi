@@ -9,19 +9,19 @@ It is NOT a validation, verification, bench, or hardware-test record. OMI v1 is 
 schematic-stage reference-design study; no hardware was built, populated, or tested.
 PCB layout, Gerbers, and signal/power integrity remain out of scope.
 
-Generated (UTC) : 2026-06-02 07:46:27 UTC
-Git HEAD        : a8b982d70a8718ae6bc5ce270c8b17b66d30bbfe
-Git branch      : phase6-exports
+Generated (UTC) : 2026-06-02 14:42:22 UTC
+Git HEAD        : 4026fd0b3841440030c045753df23d814f6e286b
+Git branch      : polish/titleblocks-and-annotations-v1.1.0
 Source schematic: design/power/omi_v1_power/omi_v1_power.kicad_sch
 kicad-cli       : 9.0.8
 ERC result      : 0 violations (clean) - gate passed, exports produced.
 
 Artifacts (SHA-256):
-  8ee4555ffc56dc52336c2f562b52b37faebc4ff1e48bd170e77dd764fa98b121  erc.json
-  e5c4f8a4f78b34d984b40d60bf7550da2f5cbf6a9863f2ba62debbe7d163f3dd  omi_v1.netlist.xml
-  e0a652f267c997a7e0f745cc1c8825239a52204a22c3bca84c6db80d7934f0ae  omi_v1.net
+  129380a620e684728ad22bec9cbffe682350d3e0af80364ad903416d24dc97ee  erc.json
+  82a9698c8e29f5198d358867a72176284855f8a2102a264cfbaabab415eff24e  omi_v1.netlist.xml
+  f1f1dc1bc12f4939f46d8440c78d821ba4ce73597b8cd80004c27218548d91f6  omi_v1.net
   a37e40c3c714356bacf4346e81d3f8a91e3d75e593201c0d1dc2edba5ae6bc74  omi_v1.bom.csv
-  2acf6e12f15806bb0799ef24089825f93e56c03591aef7dbfd6d841f8a587e3e  omi_v1.schematic.pdf
+  885770222749654f70b85ce654365a0d7907ec1fbf5969ff5570cca9410c3bba  omi_v1.schematic.pdf
 
 Component inventory (18 placed components, all footprinted):
   J1          x1   DDR4_UDIMM_288_Edge    288-position card edge - BOARD FEATURE, not a purchased part

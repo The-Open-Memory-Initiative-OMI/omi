@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "5d192423-466e-4e3b-bdca-9b0c7393280a")
 	(paper "A4")
+	(title_block
+		(title "Data Byte Lanes (DQ/DQS)")
+		(date "2026-06-02")
+		(rev "1.1.0")
+		(company "OMI")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x40"
 			(pin_names
@@ -1250,9 +1256,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Stage 7.3 - DQ/DQS (simplified star)\nThis sheet defines DQ/DQS net names and byte-lane grouping.\nPhysical routing and fly-by/order handled at layout stage.\n"
+	(text "Data Byte Lanes (DQ/DQS)\nDDR4 UDIMM  8 GB  1Rx8  non-ECC  |  64-bit data  |  eight x8 devices, one byte lane each\n\nLane | Device | System data | Strobe    | Mask/DBI\n 0   |  D0    | DQ[7:0]     | DQS0_t/c  | DM0/DBI0_n\n 1   |  D1    | DQ[15:8]    | DQS1_t/c  | DM1/DBI1_n\n 2   |  D2    | DQ[23:16]   | DQS2_t/c  | DM2/DBI2_n\n 3   |  D3    | DQ[31:24]   | DQS3_t/c  | DM3/DBI3_n\n 4   |  D4    | DQ[39:32]   | DQS4_t/c  | DM4/DBI4_n\n 5   |  D5    | DQ[47:40]   | DQS5_t/c  | DM5/DBI5_n\n 6   |  D6    | DQ[55:48]   | DQS6_t/c  | DM6/DBI6_n\n 7   |  D7    | DQ[63:56]   | DQS7_t/c  | DM7/DBI7_n\n\nThis sheet defines the logical byte-lane grouping only. Intra-byte DQ order (swizzle)\nand physical fly-by / routing order are finalized at layout (DDR4 permits DQ-within-byte\nand DQS-pair swaps for routing). Per-device nets are named Dn_DQ[7:0], Dn_DQS_t/c,\nDn_DM_DBI_n on the Address / Command / Clock sheet."
 		(exclude_from_sim no)
-		(at 16.256 20.574 0)
+		(at 20.066 37.846 0)
 		(effects
 			(font
 				(size 1.27 1.27)
