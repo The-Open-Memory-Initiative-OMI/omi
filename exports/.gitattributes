@@ -1,0 +1,4 @@
+# OMI v1 export artifacts are hash-pinned by MANIFEST.txt. Store every file in this
+# directory byte-for-byte (no EOL/text conversion) so the committed and checked-out
+# bytes match the SHA-256 values recorded in MANIFEST.txt on every platform.
+* -text
